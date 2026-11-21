@@ -168,7 +168,8 @@ python -m forecaster.cli feedback list|add|edit|delete
 ```
 - Lessons live in `forecaster_state/feedback.json` and every decision in the append-only `overrides.jsonl`.
 - The next run hands the lessons to the Planner, Retriever and Analyst as hints; keywords are matched against current filing
-  text; with an LLM, a lesson fires only if the model quotes the filing verbatim. Lessons never replace evidence.
+  text; with an LLM, a lesson fires only if the model quotes the filing verbatim. A lesson set to `review` only flags the name; one set to
+  `exclude` removes it only when it fires on the current filing. Lessons never replace evidence.
 - Human include/exclude decisions are shown to the next reviewer but are never applied silently.
 - A trend library flags deterioration (coverage down two quarters, leverage up three years, free cash flow down three years).
 - Known limitation: a lesson is free text, so different analysts write them differently; a fixed template (risk type,
