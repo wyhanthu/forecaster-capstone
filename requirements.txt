@@ -1,0 +1,7 @@
+# The scoring, retrieval, guardrail and memory code uses only the standard library.
+# The LLM layer is built on LangChain and the workflow graph on LangGraph; both are optional (the code falls back):
+langchain-core>=0.3      # messages, prompt | model | parser chains, bind_tools
+langchain-openai>=0.3    # ChatOpenAI (set OPENAI_API_KEY; optional OPENAI_BASE_URL, OPENAI_MODEL)
+langgraph>=0.2           # the company workflow graph (falls back to an in-house graph if missing)
+# Tests:
+pytest>=7.0

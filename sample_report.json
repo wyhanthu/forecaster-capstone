@@ -1,0 +1,528 @@
+{
+  "shortlist": [
+    "CYAN",
+    "NOVA",
+    "ALPH",
+    "EMBR",
+    "BRCK",
+    "LUMN"
+  ],
+  "counts": {
+    "include": 9,
+    "prescreen_fail": 1,
+    "exclude": 2,
+    "uncertain": 1,
+    "insufficient_data": 1
+  },
+  "breaker": null,
+  "scorecards": {
+    "ALPH": {
+      "ticker": "ALPH",
+      "cik": "0001000001",
+      "name": "Alpine Components Inc.",
+      "sector": "Industrials",
+      "sponsor": null,
+      "status": "include",
+      "composite": 0.7102,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 1.671,
+        "coverage_q": 7.333,
+        "current_ratio": 1.5,
+        "liquidity_cover": 2.667,
+        "liquidity_cover_adj": 2.447,
+        "covenant_headroom": 0.622,
+        "score_leverage": 0.888,
+        "score_coverage": 0.686,
+        "score_liquidity": 0.556
+      },
+      "rationale": [
+        "Composite 0.71; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [
+        "sector Industrials flagged industry-wide weakness via DRFT"
+      ],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "BRCK": {
+      "ticker": "BRCK",
+      "cik": "0001000002",
+      "name": "Brickyard Foods Corp.",
+      "sector": "Consumer Staples",
+      "sponsor": "Cedar Partners",
+      "status": "include",
+      "composite": 0.6222,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": 2028,
+      "metrics": {
+        "leverage_ltm": 1.901,
+        "coverage_q": 6.5,
+        "current_ratio": 1.429,
+        "liquidity_cover": 2.121,
+        "liquidity_cover_adj": 2.0,
+        "covenant_headroom": 0.578,
+        "score_leverage": 0.85,
+        "score_coverage": 0.588,
+        "score_liquidity": 0.428
+      },
+      "rationale": [
+        "Composite 0.62; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "CYAN": {
+      "ticker": "CYAN",
+      "cik": "0001000003",
+      "name": "Cyan Software Ltd.",
+      "sector": "Technology",
+      "sponsor": null,
+      "status": "include",
+      "composite": 1.0,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 0.585,
+        "coverage_q": 34.0,
+        "current_ratio": 2.143,
+        "liquidity_cover": 12.0,
+        "liquidity_cover_adj": 10.784,
+        "covenant_headroom": 0.867,
+        "score_leverage": 1.0,
+        "score_coverage": 1.0,
+        "score_liquidity": 1.0
+      },
+      "rationale": [
+        "Composite 1.00; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "DRFT": {
+      "ticker": "DRFT",
+      "cik": "0001000004",
+      "name": "Drift Logistics Co.",
+      "sector": "Industrials",
+      "sponsor": null,
+      "status": "include",
+      "composite": 0.1832,
+      "confidence": "high",
+      "interpretation": "deterioration",
+      "scope": "industry",
+      "wall_year": 2028,
+      "metrics": {
+        "leverage_ltm": 3.846,
+        "coverage_q": 3.026,
+        "current_ratio": 2.222,
+        "liquidity_cover": 1.378,
+        "liquidity_cover_adj": 1.53,
+        "covenant_headroom": 0.114,
+        "score_leverage": 0.526,
+        "score_coverage": 0.18,
+        "score_liquidity": 0.294
+      },
+      "rationale": [
+        "Composite 0.18; interpretation: deterioration",
+        "Trend: interest coverage fell two consecutive quarters: 4.0x -> 3.5x -> 3.0x",
+        "Trend: leverage rose three fiscal years running: 2.5x -> 3.0x -> 3.5x",
+        "Trend: free cash flow fell three fiscal years running: 300 -> 260 -> 220"
+      ],
+      "flags": [
+        "covenant_tight"
+      ],
+      "review_reasons": [
+        "covenant headroom only 11% (credit-facility note)",
+        "multi-period deterioration signal",
+        "weakness attributed to industry-wide conditions, not only this company"
+      ],
+      "used_tot": true,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "EMBR": {
+      "ticker": "EMBR",
+      "cik": "0001000005",
+      "name": "Ember Energy Partners",
+      "sector": "Energy",
+      "sponsor": null,
+      "status": "include",
+      "composite": 0.635,
+      "confidence": "high",
+      "interpretation": "setback",
+      "scope": "company",
+      "wall_year": 2028,
+      "metrics": {
+        "leverage_ltm": 1.983,
+        "coverage_q": 2.4,
+        "current_ratio": 1.5,
+        "liquidity_cover": 2.356,
+        "liquidity_cover_adj": 2.368,
+        "covenant_headroom": 0.556,
+        "score_leverage": 0.836,
+        "score_coverage": 0.535,
+        "score_liquidity": 0.534
+      },
+      "rationale": [
+        "Composite 0.64; interpretation: setback"
+      ],
+      "flags": [],
+      "review_reasons": [
+        "subsequent event in the notes: \u201cSubsequent to quarter end, the Company began commissioning replacement processing capacity.\u201d [embr-10-q-2026-10-28-note_subsequent]",
+        "one-time setback accepted on cited evidence: confirm the recovery plan"
+      ],
+      "used_tot": true,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "FLUX": {
+      "ticker": "FLUX",
+      "cik": "0001000006",
+      "name": "Flux Retail Group",
+      "sector": "Consumer Discretionary",
+      "sponsor": null,
+      "status": "prescreen_fail",
+      "composite": 0.0,
+      "confidence": "n/a",
+      "interpretation": "",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 9.0,
+        "coverage_q": 2.5,
+        "current_ratio": 1.111,
+        "liquidity_cover": 0.215
+      },
+      "rationale": [
+        "leverage 9.0x > 7.0x"
+      ],
+      "flags": [],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 1,
+      "skip_reason": "prescreen",
+      "missing": [],
+      "lessons": []
+    },
+    "GLEN": {
+      "ticker": "GLEN",
+      "cik": "0001000007",
+      "name": "Glenview Health Systems",
+      "sector": "Health Care",
+      "sponsor": null,
+      "status": "exclude",
+      "composite": 0.2139,
+      "confidence": "high",
+      "interpretation": "deterioration",
+      "scope": "company",
+      "wall_year": 2028,
+      "metrics": {
+        "leverage_ltm": 2.938,
+        "coverage_q": 3.75,
+        "current_ratio": 1.143,
+        "liquidity_cover": 0.452,
+        "liquidity_cover_adj": 0.473,
+        "covenant_headroom": 0.408,
+        "score_leverage": 0.677,
+        "score_coverage": 0.265,
+        "score_liquidity": 0.0
+      },
+      "rationale": [
+        "Hard veto: going-concern doubt cited (glen-10-k-2026-02-20-item1a)",
+        "Trend: leverage rose three fiscal years running: 2.2x -> 2.5x -> 2.8x",
+        "Trend: free cash flow fell three fiscal years running: 80 -> 60 -> 20"
+      ],
+      "flags": [
+        "veto:going-concern"
+      ],
+      "review_reasons": [],
+      "used_tot": true,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "HRBR": {
+      "ticker": "HRBR",
+      "cik": "0001000008",
+      "name": "Harbor Media Holdings",
+      "sector": "Communication Services",
+      "sponsor": null,
+      "status": "uncertain",
+      "composite": 0.0,
+      "confidence": "low",
+      "interpretation": "",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 2.154,
+        "coverage_q": 5.357,
+        "current_ratio": 1.4,
+        "liquidity_cover": 1.976
+      },
+      "rationale": [
+        "post-filing event: covenant_waiver (8-K 2026-10-30)"
+      ],
+      "flags": [
+        "event_freeze"
+      ],
+      "review_reasons": [
+        "post-filing event: covenant_waiver (8-K 2026-10-30)"
+      ],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 2,
+      "skip_reason": "event",
+      "missing": [],
+      "lessons": []
+    },
+    "IRON": {
+      "ticker": "IRON",
+      "cik": "0001000009",
+      "name": "Ironwood Materials Inc.",
+      "sector": "Materials",
+      "sponsor": null,
+      "status": "exclude",
+      "composite": 0.3592,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": 2027,
+      "metrics": {
+        "leverage_ltm": 3.261,
+        "coverage_q": 5.364,
+        "current_ratio": 1.19,
+        "liquidity_cover": 0.273,
+        "liquidity_cover_adj": 0.25,
+        "covenant_headroom": 0.377,
+        "score_leverage": 0.623,
+        "score_coverage": 0.455,
+        "score_liquidity": 0.0
+      },
+      "rationale": [
+        "Hard veto: liquidity cover 0.25 < 1.00: cash, revolver and projected free cash flow do not cover maturities, leases, commitments, litigation and rate shock over 2 years"
+      ],
+      "flags": [
+        "veto:liquidity"
+      ],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "JADE": {
+      "ticker": "JADE",
+      "cik": "0001000010",
+      "name": "Jade Chemicals Corp.",
+      "sector": "Materials",
+      "sponsor": "Cedar Partners",
+      "status": "include",
+      "composite": 0.5837,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 2.083,
+        "coverage_q": 6.462,
+        "current_ratio": 1.545,
+        "liquidity_cover": 2.244,
+        "liquidity_cover_adj": 1.718,
+        "covenant_headroom": 0.533,
+        "score_leverage": 0.82,
+        "score_coverage": 0.584,
+        "score_liquidity": 0.348
+      },
+      "rationale": [
+        "Composite 0.58; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [
+        "off-balance-sheet exposure in the notes: \u201cPurchase and other commitments due within the next two years total $160.0 million, including $120.0 million of guarantees of an unconsolidated joint venture.\u201d [jade-10-q-2026-10-28-note_commitments]"
+      ],
+      "used_tot": true,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "KITE": {
+      "ticker": "KITE",
+      "cik": "0001000011",
+      "name": "Kite Telecom Inc.",
+      "sector": "Communication Services",
+      "sponsor": null,
+      "status": "insufficient_data",
+      "composite": 0.0,
+      "confidence": "low",
+      "interpretation": "",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 2.038,
+        "coverage_q": 5.4,
+        "current_ratio": 1.333,
+        "liquidity_cover": 2.182
+      },
+      "rationale": [
+        "latest 10-Q filed 2026-03-15 is older than 150 days"
+      ],
+      "flags": [],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 1,
+      "skip_reason": "stale",
+      "missing": [],
+      "lessons": []
+    },
+    "LUMN": {
+      "ticker": "LUMN",
+      "cik": "0001000012",
+      "name": "Lumina Utilities Co.",
+      "sector": "Utilities",
+      "sponsor": null,
+      "status": "include",
+      "composite": 0.4529,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 2.634,
+        "coverage_q": 5.429,
+        "current_ratio": 1.231,
+        "liquidity_cover": 1.36,
+        "liquidity_cover_adj": 1.092,
+        "covenant_headroom": 0.435,
+        "score_leverage": 0.728,
+        "score_coverage": 0.462,
+        "score_liquidity": 0.169
+      },
+      "rationale": [
+        "Composite 0.45; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "MRDN": {
+      "ticker": "MRDN",
+      "cik": "0001000013",
+      "name": "Meridian Industrial Corp.",
+      "sector": "Industrials",
+      "sponsor": null,
+      "status": "include",
+      "composite": 0.5815,
+      "confidence": "medium",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": null,
+      "metrics": {
+        "leverage_ltm": 2.312,
+        "coverage_q": 6.25,
+        "current_ratio": 1.5,
+        "liquidity_cover": 2.079,
+        "liquidity_cover_adj": 1.915,
+        "covenant_headroom": 0.489,
+        "score_leverage": 0.781,
+        "score_coverage": 0.559,
+        "score_liquidity": 0.404
+      },
+      "rationale": [
+        "Composite 0.58; interpretation: stable"
+      ],
+      "flags": [
+        "fallback_text_extraction"
+      ],
+      "review_reasons": [
+        "a figure was re-extracted from filing text after an implausible XBRL value",
+        "sector Industrials flagged industry-wide weakness via DRFT"
+      ],
+      "used_tot": false,
+      "revision_rounds": 0,
+      "tool_calls": 14,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    },
+    "NOVA": {
+      "ticker": "NOVA",
+      "cik": "0001000014",
+      "name": "Nova Semiconductor Inc.",
+      "sector": "Technology",
+      "sponsor": "Cedar Partners",
+      "status": "include",
+      "composite": 1.0,
+      "confidence": "high",
+      "interpretation": "stable",
+      "scope": "",
+      "wall_year": 2028,
+      "metrics": {
+        "leverage_ltm": 0.915,
+        "coverage_q": 18.533,
+        "current_ratio": 2.0,
+        "liquidity_cover": 5.677,
+        "liquidity_cover_adj": 5.358,
+        "covenant_headroom": 0.8,
+        "score_leverage": 1.0,
+        "score_coverage": 1.0,
+        "score_liquidity": 1.0
+      },
+      "rationale": [
+        "Composite 1.00; interpretation: stable"
+      ],
+      "flags": [],
+      "review_reasons": [
+        "subsequent event in the notes: \u201cSubsequent to quarter end, the Company repaid $200.0 million of outstanding term loans.\u201d [nova-10-q-2026-10-28-note_subsequent]"
+      ],
+      "used_tot": true,
+      "revision_rounds": 0,
+      "tool_calls": 13,
+      "skip_reason": "",
+      "missing": [],
+      "lessons": []
+    }
+  }
+}

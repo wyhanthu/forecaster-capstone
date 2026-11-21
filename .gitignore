@@ -1,0 +1,37 @@
+# Secrets: the API key lives in .env, which must never be committed
+.env
+.env.*
+!.env.example
+
+# Runtime state written by the CLI (audit log, memory, last run)
+forecaster_state/
+report.md
+report.json
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Local market-data exports (Nasdaq.com screener CSVs)
+industry_maps/
+_to_delete/
+
+# Working outputs and local data that are not part of the deliverable
+clo_full.*
+regcap_full.*
+clo_trial.*
+clo_llm_trial.*
+run_llm.*
+gaps*.txt
+clo_rated.json
+regcap_rated.json
+ratings.detail.csv
