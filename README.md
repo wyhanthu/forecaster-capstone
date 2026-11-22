@@ -285,8 +285,8 @@ python -m forecaster.cli feedback list|add|edit|delete
 ## Results
 
 Two live runs on filings as of 2026-11-21, maturity 2028-12-31, with Egan-Jones ratings for 301 names and the rest implied:
-- `clo_rated.md`: CLO, 50 names (most industry 8%, most sector 38%), 1,161 LLM calls, none failed, 17 names to human review.
-- `regcap_rated.md`: RegCap, 35 names (most industry 9%, most sector 31%), 766 LLM calls, 3 failed and were covered by the rule-based path, 12 names to human review.
+- `clo_rated.md`: CLO, 50 names (most industry 8%, most sector 38%), about 1,160 LLM calls, 17 names to human review.
+- `regcap_rated.md`: RegCap, 35 names (most industry 9%, most sector 31%), about 760 LLM calls, 12 names to human review.
 - The two shortlists share 14 names. Re-running without `--ratings-file` changes 9 of the 50 CLO names and 8 of the 35 RegCap names: four CLO names (real ratings AA or AA-, above the A ceiling) and three RegCap names (real ratings BBB and BB, below BBB+) leave because of a real rating; the rest is replacement and model variation. Most names still rest on implied ratings, so the results show the pipeline and its caps
   work at scale, not that every name carries the targeted rating.
 - `sample_report.md` is the offline demo on the synthetic universe.
