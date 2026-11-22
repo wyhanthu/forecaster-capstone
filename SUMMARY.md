@@ -49,7 +49,7 @@ The README gives the download links and commands.
 | LLM calls (failed) | 1,161 (0) | 766 (3, covered by rules) |
 | Names to human review | 17 | 12 |
 
-The two shortlists share 14 names. Egan-Jones ratings (public, from ratingshistory.info) were supplied for 301 names; the rest are implied, so the results show
+The two shortlists share 14 names. Without the rating file, 9 of the 50 CLO names and 8 of the 35 RegCap names change: four CLO names (real ratings AA or AA-) and three RegCap names (real ratings BBB and BB) leave because of a real rating, and the rest is replacement and model variation. Egan-Jones ratings (public, from ratingshistory.info) were supplied for 301 names; the rest are implied, so the results show
 that the pipeline and caps work at scale, not that every name carries the targeted rating.
 
 ## Limitations and next steps
