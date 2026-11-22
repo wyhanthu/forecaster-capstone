@@ -102,15 +102,13 @@ shortlisted pool only and cached in `forecaster_state/`, so you do not download 
 CLO mode, 50 names:
 
 ```bash
-python -m forecaster.cli screen --mode clo --maturity 2028-12-31 --top-n 50 --pool-factor 3 \
-    --ratings-file ratings.csv --output clo_rated.md
+python -m forecaster.cli screen --mode clo --maturity 2028-12-31 --top-n 50 --ratings-file ratings.csv --output clo_rated.md
 ```
 
 RegCap mode, 35 names:
 
 ```bash
-python -m forecaster.cli screen --mode regcap --maturity 2028-12-31 --top-n 35 --pool-factor 3 \
-    --ratings-file ratings.csv --output regcap_rated.md
+python -m forecaster.cli screen --mode regcap --maturity 2028-12-31 --top-n 35 --ratings-file ratings.csv --output regcap_rated.md
 ```
 
 | Option | Meaning |
