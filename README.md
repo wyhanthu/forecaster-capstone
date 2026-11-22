@@ -72,7 +72,7 @@ Forecaster needs two SEC bulk files. One command downloads both; it reads your c
 (step 3), so you do not type it again. The files are large, so this takes a while:
 
 ```bash
-python -m forecaster.cli download-data --dir data       # saves data/companyfacts.zip and data/submissions.zip
+python -m forecaster.cli download-data --dir data --force      # saves data/companyfacts.zip and data/submissions.zip
 ```
 
 The `screen` command then finds the two files in `data/` by itself, so it needs no file paths. If you prefer `curl`, SEC requires a contact in the
@@ -209,7 +209,6 @@ is written to the audit log with each call.
 # .env
 OPENROUTER_API_KEY=...           # or OPENAI_API_KEY (any OpenAI-compatible endpoint with OPENAI_BASE_URL)
 OPENROUTER_MODEL=provider/model  # must support tool calling and JSON mode
-OPENROUTER_PROVIDER=alibaba      # optional: pin the upstream provider; fallbacks are then off (keeps the prompt-cache hit rate high)
 LLM_MAX_RETRIES=6                # optional: retries with backoff on connection errors
 ```
 
