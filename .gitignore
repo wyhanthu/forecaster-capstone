@@ -35,3 +35,4 @@ gaps*.txt
 clo_rated.json
 regcap_rated.json
 ratings.detail.csv
+/data/

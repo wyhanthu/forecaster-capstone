@@ -82,7 +82,7 @@ def _make_source(a, cfg):
     elif a.mode:
         if not getattr(a, "facts_zip", None) or not getattr(a, "submissions_zip", None):
             print("No bulk files given: reading every submissions record from SEC (cached afterwards; about 10 minutes).\n"
-                  "Faster: download companyfacts.zip and submissions.zip once and pass --facts-zip / --submissions-zip.", file=sys.stderr)
+                  "Faster: run `python -m forecaster.cli download-data` once (saves them in data/).", file=sys.stderr)
         uni = load_or_build(Path(a.state_dir) / "universe", cfg.as_of, a.rebuild_universe, ciks=src.all_ciks(),
                             read_subs=src.read_subs, max_age_days=cfg.max_filing_age_days, include_financials=a.include_financials)
         tickers_ok = uni["tickers"]
@@ -415,6 +415,35 @@ def _xbrl_gaps(a) -> int:
     return 0
 
 
+DATA_DIR = Path("data")
+
+
+def _default_zips(a) -> None:
+    """When --facts-zip / --submissions-zip are not given, use data/companyfacts.zip and data/submissions.zip if they exist
+    (where `download-data` saves them), so the run command needs no file paths."""
+    for attr, name in (("facts_zip", "companyfacts.zip"), ("submissions_zip", "submissions.zip")):
+        if hasattr(a, attr) and not getattr(a, attr) and (DATA_DIR / name).is_file():
+            setattr(a, attr, str(DATA_DIR / name))
+
+
+def _download_data(a) -> int:
+    from .download import download_all
+    from .edgar import check_user_agent
+    try:
+        ua = check_user_agent(os.getenv("SEC_USER_AGENT"))
+    except ValueError as exc:
+        raise SystemExit(str(exc))
+    folder = Path(a.dir).expanduser()
+    try:
+        files = download_all(folder, ua, force=a.force)
+    except OSError as exc:
+        raise SystemExit(f"Download failed: {exc}. Check the network and SEC_USER_AGENT, then run the command again.")
+    print("Done. The screen command finds the files in data/ by itself.")
+    if folder.resolve() != DATA_DIR.resolve():
+        print(f"Saved outside data/, so add: --facts-zip {files['companyfacts.zip']} --submissions-zip {files['submissions.zip']}")
+    return 0
+
+
 def main(argv=None) -> int:
     load_env()                                  # OPENAI_API_KEY etc. from .env (never overrides the real environment)
     ap = argparse.ArgumentParser(prog="forecaster")
@@ -467,6 +496,10 @@ def main(argv=None) -> int:
     ec.add_argument("--facts-zip", help="SEC bulk companyfacts.zip (no per-company request needed)")
     ec.add_argument("--submissions-zip", help="SEC bulk submissions.zip")
     ec.set_defaults(fn=_edgar_check)
+    dd = sub.add_parser("download-data", help="download SEC's companyfacts.zip and submissions.zip (uses SEC_USER_AGENT from .env)")
+    dd.add_argument("--dir", default="data", help="folder for the two zip files (default ./data, created if missing)")
+    dd.add_argument("--force", action="store_true", help="download again even if the files exist")
+    dd.set_defaults(fn=_download_data)
     c = sub.add_parser("llm-check", help="one tiny LLM call; prints package versions and the full error if it fails")
     c.set_defaults(fn=_llm_check)
     g = sub.add_parser("graph", help="print the company workflow as a Mermaid diagram (needs langgraph)")
@@ -501,6 +534,7 @@ def main(argv=None) -> int:
     r.add_argument("--all-sectors", action="store_true", help="apply the lesson to every sector, not just this one")
     r.set_defaults(fn=_review)
     a = ap.parse_args(argv)
+    _default_zips(a)
     return a.fn(a)
 
 

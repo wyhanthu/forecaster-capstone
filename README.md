@@ -8,29 +8,140 @@ investment advice. The environment is read-only: nothing is traded and no accoun
 Built for the Agentic AI capstone (Checkpoints 1-6) in the structure of the course's `research_agent` sample and labs
 (MCP-style tool registry, LangGraph `StateGraph`, ReAct, Tree-of-Thought, MMR, guardrails, audit log, human review).
 
-## Quick start
+## Get it running (step by step)
+
+Follow the steps in order. Steps 1 to 4 are one-time setup; step 5 is the run.
+
+**Run every command in this guide from the project folder** (the `forecaster-capstone` folder that contains `README.md`, the
+`forecaster/` package and `ratings.csv`). Commands such as `python -m forecaster.cli ...` and the relative paths `data/...`
+and `ratings.csv` only work from there. Each time you open a new terminal, do:
 
 ```bash
-pip install -r requirements.txt
-cp .env.example .env            # then edit .env; it is git-ignored and never committed
-python -m pytest -q             # 132 offline tests, no network and no key needed
-python -m forecaster.cli screen --top-n 8 --output report.md      # offline demo on 14 fictional companies
+cd forecaster-capstone                 # or wherever you cloned it
+source .venv/bin/activate              # Windows: .venv\Scripts\activate
 ```
 
-Live run on real filings. Download SEC's two bulk files once from
-https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data (`companyfacts.zip`, `submissions.zip`), put
-`SEC_USER_AGENT=Your Name you@yourfirm.com` in `.env` (SEC requires a contact in every request), then:
+### 1. What you need
+
+| Item | Notes |
+|---|---|
+| Python 3.10 or newer | check with `python3 --version` |
+| git | to clone the repository |
+| An LLM API key (recommended) | OpenRouter or OpenAI; any OpenAI-compatible endpoint works. Without a key the whole run still works on rules only (`--no-llm`), but the filing-reading step is much weaker |
+| About 5 GB of free disk | the two SEC bulk files are large (each is about 1 GB or more) |
+| An internet connection | for the one-time downloads and for the LLM |
+
+### 2. Install
+
+```bash
+git clone https://github.com/wyhanthu/forecaster-capstone.git
+cd forecaster-capstone
+
+python3 -m venv .venv                  # a separate Python environment for this project
+source .venv/bin/activate              # Windows: .venv\Scripts\activate
+pip install -r requirements.txt        # installs the add-ins (packages) below
+```
+
+`requirements.txt` installs three add-ins: `langchain-core` and `langchain-openai` (the LLM layer) and `langgraph` (the workflow
+graph). `pytest` is only needed for the optional tests at the end of this file. The scoring, retrieval, guardrail and memory
+code uses only the Python standard library. Next time, you only need to run `source .venv/bin/activate` again.
+
+### 3. Configure
+
+```bash
+cp .env.example .env                   # .env is git-ignored and never committed
+```
+
+Open `.env` in any editor and set:
+
+```
+SEC_USER_AGENT=Your Name your.email@example.com     # required: SEC asks every client to identify itself
+OPENROUTER_API_KEY=your-openrouter-key              # or OPENAI_API_KEY=... (see .env.example)
+OPENROUTER_MODEL=provider/model                     # the model must support tool calling and JSON mode
+```
+
+Check that the model answers:
+
+```bash
+python -m forecaster.cli llm-check     # one tiny call; prints the provider, the model and any error
+```
+
+### 4. Download the data (all public)
+
+Forecaster needs two SEC bulk files. One command downloads both; it reads your contact from `SEC_USER_AGENT` in `.env`
+(step 3), so you do not type it again. The files are large, so this takes a while:
+
+```bash
+python -m forecaster.cli download-data --dir data       # saves data/companyfacts.zip and data/submissions.zip
+```
+
+The `screen` command then finds the two files in `data/` by itself, so it needs no file paths. If you prefer `curl`, SEC requires a contact in the
+`User-Agent`, so put your own name and e-mail in the command:
+
+```bash
+mkdir -p data
+curl -A "Your Name you@yourfirm.com" -o data/companyfacts.zip https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip
+curl -A "Your Name you@yourfirm.com" -o data/submissions.zip https://www.sec.gov/Archives/edgar/daily-index/bulkdata/submissions.zip
+```
+
+`--dir` is the folder for the two files (it is created if missing, and `data/` is git-ignored). Without `--dir` the default is also `data/`; add `--force` to download again.
+
+Do not unzip them; Forecaster reads the zip files directly. If a download fails, open the SEC page
+https://www.sec.gov/search-filings/edgar-search-assistance/accessing-edgar-data in a browser and download `companyfacts.zip` and
+`submissions.zip` from there. Re-download them whenever you want fresher filings.
+
+Already in this repository, so there is nothing else to download:
+- `ratings.csv`: real credit ratings for 301 companies (Egan-Jones, public, from https://ratingshistory.info). Optional input.
+- `forecaster/data/industry_map.csv`: industry and sector for the concentration caps (public Nasdaq.com screener data).
+
+Details and how to refresh them are in "Data sources" below. Filing text (10-K, 10-Q, 8-K) is fetched from sec.gov for the
+shortlisted pool only and cached in `forecaster_state/`, so you do not download it yourself.
+
+### 5. Run
+
+CLO mode, 50 names:
 
 ```bash
 python -m forecaster.cli screen --mode clo --maturity 2028-12-31 --top-n 50 --pool-factor 3 \
-    --ratings-file ratings.csv --facts-zip ~/Downloads/companyfacts.zip --submissions-zip ~/Downloads/submissions.zip \
-    --output clo_rated.md
-python -m forecaster.cli screen --mode regcap --maturity 2028-12-31 --top-n 35 --pool-factor 3 --ratings-file ratings.csv \
-    --facts-zip ~/Downloads/companyfacts.zip --submissions-zip ~/Downloads/submissions.zip --output regcap_rated.md
+    --ratings-file ratings.csv --output clo_rated.md
 ```
 
-`--ratings-file` is optional (see "Ratings"). Without a model key every LLM step falls back to rules (`--no-llm` forces this).
-The report and a `.json` copy are written; the end of the run prints the number of LLM calls made and how many failed.
+RegCap mode, 35 names:
+
+```bash
+python -m forecaster.cli screen --mode regcap --maturity 2028-12-31 --top-n 35 --pool-factor 3 \
+    --ratings-file ratings.csv --output regcap_rated.md
+```
+
+| Option | Meaning |
+|---|---|
+| `--mode clo` or `regcap` | which rating target and quotas to use (see "Modes and rating targets") |
+| `--maturity YYYY-MM-DD` | the date the collateral must last until |
+| `--top-n N` | how many names you want in the final list |
+| `--pool-factor 3` | the LLM reads 3 x N companies, then the final N are chosen under the caps |
+| `--ratings-file ratings.csv` | optional; real ratings override the implied ones |
+| `--facts-zip`, `--submissions-zip` | optional; default `data/companyfacts.zip` and `data/submissions.zip` from step 4 |
+| `--output file.md` | the report; a `.json` copy is written next to it |
+| `--no-llm` | rules only, no key needed |
+
+What you will see: stage 1 screens all companies (about 2 minutes, no LLM), then stage 2 reads the filings of the pool (roughly
+10 to 20 minutes with the default settings, depending on the model). The run ends by printing how many LLM calls were made and how
+many failed. If the run stops, run the same command again: downloaded filings are cached.
+
+Without the zip files the same command still works, but it reads one record per company from SEC (about 10 minutes, cached).
+
+### 6. Read the report
+
+The output file has: the funnel counts, the **shortlist** with a concentration table, one **memo per company** (verbatim
+filing facts, computed ratios, numbered citations), the names **not selected** and why, and the **human review queue**. A name is
+marked `review` when it has an open question for the analyst. To record your decision and lessons for the next run, see
+"Memory and human review".
+
+### 7. Try it without any data or key (optional)
+
+```bash
+python -m forecaster.cli screen --top-n 8 --output report.md      # offline demo on 14 fictional companies
+```
 
 ## What it does
 
@@ -78,11 +189,7 @@ available with `--min-ebitda` (LTM EBITDA in $ millions; off by default), and `-
 | Credit ratings (optional) | Egan-Jones 17g-7 rating history, https://ratingshistory.info; convert with `python -m forecaster.cli import-ratings <history.csv> --output ratings.csv --facts-zip ... --submissions-zip ...` | `--ratings-file ratings.csv` |
 | Industry and sector | Nasdaq.com stock screener, https://www.nasdaq.com/market-activity/stocks/screener (download the CSV for each exchange) | bundled as `forecaster/data/industry_map.csv`; refresh with `--industry-file` |
 
-SEC requires every request to identify the client. To download the two zip files with `curl`:
-```bash
-curl -A "Your Name you@yourfirm.com" -O https://www.sec.gov/Archives/edgar/daily-index/xbrl/companyfacts.zip
-curl -A "Your Name you@yourfirm.com" -O https://www.sec.gov/Archives/edgar/daily-index/bulkdata/submissions.zip
-```
+To download the two SEC files, run `python -m forecaster.cli download-data` (step 4 above; it uses `SEC_USER_AGENT` from `.env`).
 Without the zip files the same screen command still works but reads one record per company from SEC (about 10 minutes, cached).
 
 ## Industry and sector (public data only)
@@ -177,10 +284,10 @@ python -m forecaster.cli feedback list|add|edit|delete
 
 ## Results
 
-Two live runs on 2026-11-01 filings, maturity 2028-12-31, with Egan-Jones ratings for 301 names and the rest implied:
-- `clo_rated.md`: CLO, 50 names (most industry 10%, most sector 36%), 1,164 LLM calls, none failed, 18 names to human review.
-- `regcap_rated.md`: RegCap, 35 names (most industry 6%, most sector 37%), 777 LLM calls, none failed, 9 names to human review.
-- The two shortlists share 17 names. Most names still rest on implied ratings, so the results show the pipeline and its caps
+Two live runs on filings as of 2026-11-21, maturity 2028-12-31, with Egan-Jones ratings for 301 names and the rest implied:
+- `clo_rated.md`: CLO, 50 names (most industry 8%, most sector 38%), 1,161 LLM calls, none failed, 17 names to human review.
+- `regcap_rated.md`: RegCap, 35 names (most industry 9%, most sector 31%), 766 LLM calls, 3 failed and were covered by the rule-based path, 12 names to human review.
+- The two shortlists share 14 names. Most names still rest on implied ratings, so the results show the pipeline and its caps
   work at scale, not that every name carries the targeted rating.
 - `sample_report.md` is the offline demo on the synthetic universe.
 
@@ -210,6 +317,12 @@ Two live runs on 2026-11-01 filings, maturity 2028-12-31, with Egan-Jones rating
 
 ## Layout
 
-`forecaster/` the package (code, `data/industry_map.csv`) | `tests/` 132 tests | `requirements.txt` | `.env.example` |
+`forecaster/` the package (code, `data/industry_map.csv`) | `tests/` 134 tests | `requirements.txt` | `.env.example` |
 `ratings.csv` real ratings for 301 companies |
 `clo_rated.md`, `regcap_rated.md`, `sample_report.md` example outputs.
+
+## Tests (optional, for developers)
+
+```bash
+python -m pytest -q                    # 134 offline tests, no network and no key needed
+```

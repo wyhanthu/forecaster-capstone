@@ -40,16 +40,16 @@ The README gives the download links and commands.
 - An implied rating gates by group only (calibrated on 225 Egan-Jones names: 32% exact, 61% within one category); a real rating
   must match its category.
 
-## Results (filings as of 2026-11-01, maturity 2028-12-31)
+## Results (filings as of 2026-11-21, maturity 2028-12-31)
 | | CLO | RegCap |
 |---|---|---|
 | Shortlist | 50 | 35 |
-| Companies reaching include | 140 | 103 |
-| Largest industry / sector share | 10% / 36% | 6% / 37% |
-| LLM calls (failed) | 1,164 (0) | 777 (0) |
-| Names to human review | 18 | 9 |
+| Companies reaching include | 143 | 102 |
+| Largest industry / sector share | 8% / 38% | 9% / 31% |
+| LLM calls (failed) | 1,161 (0) | 766 (3, covered by rules) |
+| Names to human review | 17 | 12 |
 
-The two shortlists share 17 names. Egan-Jones ratings (public, from ratingshistory.info) were supplied for 301 names; the rest are implied, so the results show
+The two shortlists share 14 names. Egan-Jones ratings (public, from ratingshistory.info) were supplied for 301 names; the rest are implied, so the results show
 that the pipeline and caps work at scale, not that every name carries the targeted rating.
 
 ## Limitations and next steps

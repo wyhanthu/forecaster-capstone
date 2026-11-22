@@ -1,93 +1,94 @@
 # Forecaster screening report (2026-11-21)
 
 Live SEC filings (EDGAR).
-Mode: CLO (mainly BBB; up to A, some BB) | maturity 2028-12-31 (2.2 years, horizon 3) | as of 2026-11-01
+Mode: CLO (mainly BBB; up to A, some BB) | maturity 2028-12-31 (2.1 years, horizon 3) | as of 2026-11-21
 Rating categories are IMPLIED from leverage and interest coverage, because SEC filings carry no credit ratings; target: A, BBB_plus, BBB, BB. A ratings file overrides 301 names.
 Universe: companies with XBRL facts 20,606 > submissions record found 20,606 > listed on NYSE/Nasdaq with a ticker 5,890 > sector kept 4,492 > latest filing recent enough 3,231 > not Finance / Real Estate (Nasdaq.com sector) 3,159
-Funnel outcome: candidate: 612, exclude: 4, include: 140, insufficient_data: 1024, prescreen_fail: 1374, uncertain: 5
+Funnel outcome: candidate: 612, exclude: 4, include: 143, insufficient_data: 1024, prescreen_fail: 1374, uncertain: 2
 
 ## Shortlist
 
 | # | Ticker | Sector | Score | Confidence | Interp. | Auto-release |
 |---|---|---|---|---|---|---|
 | 1 | ACN | Industrials | 1.00 | medium | stable | yes |
-| 2 | AOS | Consumer Discretionary | 1.00 | medium | stable | yes |
-| 3 | APA | Energy | 1.00 | medium | stable | yes |
-| 4 | AWI | Materials | 1.00 | medium | stable | yes |
-| 5 | AYI | Industrials | 1.00 | medium | stable | yes |
-| 6 | CHE | Health Care | 1.00 | medium | setback | review |
-| 7 | CRS | Materials | 1.00 | medium | setback | review |
+| 2 | AIT | Industrials | 1.00 | medium | stable | yes |
+| 3 | AOS | Consumer Discretionary | 1.00 | medium | stable | yes |
+| 4 | APA | Energy | 1.00 | medium | stable | yes |
+| 5 | APP | Technology | 1.00 | medium | stable | yes |
+| 6 | AWI | Materials | 1.00 | medium | stable | yes |
+| 7 | AYI | Industrials | 1.00 | medium | setback | review |
 | 8 | CTAS | Consumer Discretionary | 1.00 | medium | stable | yes |
-| 9 | GOOGL | Technology | 1.00 | medium | setback | review |
-| 10 | INFU | Health Care | 1.00 | medium | stable | yes |
-| 11 | MATX | Industrials | 1.00 | medium | stable | yes |
-| 12 | MZTI | Consumer Staples | 1.00 | medium | stable | yes |
-| 13 | ONC | Health Care | 1.00 | medium | stable | yes |
-| 14 | QNST | Industrials | 1.00 | medium | stable | yes |
-| 15 | TBLA | Technology | 1.00 | medium | stable | yes |
-| 16 | TILE | Consumer Discretionary | 1.00 | medium | stable | yes |
-| 17 | TPR | Consumer Discretionary | 1.00 | medium | setback | review |
-| 18 | VLGEA | Consumer Staples | 1.00 | medium | setback | review |
-| 19 | VRT | Technology | 1.00 | medium | stable | yes |
-| 20 | WDFC | Materials | 1.00 | medium | stable | yes |
-| 21 | WMT | Consumer Discretionary | 1.00 | medium | stable | yes |
-| 22 | XPEL | Industrials | 1.00 | medium | stable | review |
-| 23 | GD | Industrials | 1.00 | medium | stable | yes |
-| 24 | SND | Materials | 1.00 | medium | stable | yes |
-| 25 | MA | Industrials | 1.00 | medium | stable | yes |
-| 26 | LEVI | Consumer Discretionary | 1.00 | medium | stable | yes |
-| 27 | VMI | Industrials | 1.00 | medium | setback | review |
-| 28 | DVN | Energy | 0.99 | medium | stable | yes |
-| 29 | CW | Industrials | 0.99 | medium | stable | yes |
-| 30 | AVGO | Technology | 0.99 | medium | stable | yes |
-| 31 | CMI | Industrials | 0.99 | medium | stable | yes |
-| 32 | LECO | Industrials | 0.99 | medium | stable | yes |
-| 33 | DG | Consumer Discretionary | 0.98 | medium | stable | yes |
-| 34 | MCK | Health Care | 0.98 | medium | stable | yes |
-| 35 | PODD | Health Care | 0.98 | medium | setback | review |
-| 36 | QCOM | Technology | 0.98 | medium | stable | yes |
-| 37 | CHWY | Consumer Discretionary | 0.97 | medium | setback | review |
-| 38 | ETON | Health Care | 0.97 | medium | setback | review |
-| 39 | HWM | Materials | 0.97 | medium | stable | yes |
-| 40 | TTC | Industrials | 0.97 | medium | stable | yes |
-| 41 | ADSK | Technology | 0.97 | medium | setback | review |
-| 42 | THO | Consumer Discretionary | 0.97 | medium | setback | review |
-| 43 | MOD | Industrials | 0.97 | medium | stable | yes |
-| 44 | VSXY | Consumer Discretionary | 0.97 | medium | stable | yes |
-| 45 | CHSCP | Industrials | 0.97 | medium | stable | yes |
-| 46 | ZETA | Technology | 0.96 | medium | stable | yes |
-| 47 | LTH | Consumer Discretionary | 0.96 | medium | stable | yes |
-| 48 | PG | Materials | 0.96 | medium | stable | yes |
-| 49 | JCI | Industrials | 0.94 | medium | setback | review |
-| 50 | UBER | Industrials | 0.94 | medium | setback | review |
+| 9 | EOG | Energy | 1.00 | medium | setback | review |
+| 10 | FTLF | Health Care | 1.00 | medium | setback | review |
+| 11 | GOOGL | Technology | 1.00 | medium | stable | yes |
+| 12 | MATX | Industrials | 1.00 | medium | stable | yes |
+| 13 | MZTI | Consumer Staples | 1.00 | medium | setback | review |
+| 14 | ONC | Health Care | 1.00 | medium | stable | yes |
+| 15 | QNST | Industrials | 1.00 | medium | stable | yes |
+| 16 | TBLA | Technology | 1.00 | medium | stable | yes |
+| 17 | TILE | Consumer Discretionary | 1.00 | medium | stable | yes |
+| 18 | TPR | Consumer Discretionary | 1.00 | medium | setback | review |
+| 19 | VC | Consumer Discretionary | 1.00 | medium | setback | review |
+| 20 | VLGEA | Consumer Staples | 1.00 | medium | stable | yes |
+| 21 | VRT | Technology | 1.00 | medium | stable | yes |
+| 22 | WDFC | Materials | 1.00 | medium | stable | yes |
+| 23 | WMT | Consumer Discretionary | 1.00 | medium | stable | yes |
+| 24 | XPEL | Industrials | 1.00 | medium | stable | yes |
+| 25 | GD | Industrials | 1.00 | medium | stable | yes |
+| 26 | SND | Materials | 1.00 | medium | stable | yes |
+| 27 | MA | Industrials | 1.00 | medium | stable | yes |
+| 28 | LEVI | Consumer Discretionary | 1.00 | medium | setback | review |
+| 29 | VMI | Industrials | 1.00 | medium | setback | review |
+| 30 | DVN | Energy | 0.99 | medium | stable | yes |
+| 31 | CW | Industrials | 0.99 | medium | stable | yes |
+| 32 | AMD | Technology | 0.99 | medium | setback | review |
+| 33 | AVGO | Technology | 0.99 | medium | stable | yes |
+| 34 | M | Consumer Discretionary | 0.99 | medium | stable | review |
+| 35 | CMI | Industrials | 0.99 | medium | stable | yes |
+| 36 | CXDO | Communication Services | 0.99 | medium | stable | yes |
+| 37 | AZZ | Industrials | 0.99 | medium | stable | yes |
+| 38 | LECO | Industrials | 0.99 | medium | stable | yes |
+| 39 | DG | Consumer Discretionary | 0.98 | medium | setback | review |
+| 40 | MCK | Health Care | 0.98 | medium | stable | yes |
+| 41 | PODD | Health Care | 0.98 | medium | setback | review |
+| 42 | QCOM | Technology | 0.98 | medium | setback | review |
+| 43 | CHWY | Consumer Discretionary | 0.97 | medium | setback | review |
+| 44 | HWM | Materials | 0.97 | medium | stable | yes |
+| 45 | TTC | Industrials | 0.97 | medium | stable | yes |
+| 46 | BROS | Consumer Discretionary | 0.97 | medium | setback | review |
+| 47 | MOD | Industrials | 0.97 | medium | stable | yes |
+| 48 | CHSCP | Industrials | 0.97 | medium | stable | yes |
+| 49 | LTH | Consumer Discretionary | 0.96 | medium | stable | yes |
+| 50 | MGNI | Technology | 0.96 | medium | stable | yes |
 
 **Concentration check** (50 names; caps are on a list of 50)
 
 | Group | Name | Names | Share | Cap | OK |
 |---|---|---|---|---|---|
-| sector | Consumer Discretionary | 18 | 36% | 20 | yes |
-| sector | Industrials | 14 | 28% | 20 | yes |
-| sector | Technology | 8 | 16% | 20 | yes |
-| sector | Health Care | 6 | 12% | 20 | yes |
+| sector | Consumer Discretionary | 19 | 38% | 20 | yes |
+| sector | Industrials | 12 | 24% | 20 | yes |
+| sector | Technology | 9 | 18% | 20 | yes |
+| sector | Health Care | 4 | 8% | 20 | yes |
+| sector | Energy | 3 | 6% | 20 | yes |
 | sector | Consumer Staples | 2 | 4% | 20 | yes |
-| sector | Energy | 2 | 4% | 20 | yes |
-| industry | Industrial Machinery/Components | 5 | 10% | 7 | yes |
-| industry | Business Services | 4 | 8% | 7 | yes |
+| sector | Telecommunications | 1 | 2% | 20 | yes |
+| industry | Industrial Machinery/Components | 4 | 8% | 7 | yes |
+| industry | Business Services | 3 | 6% | 7 | yes |
+| industry | Computer Software: Programming Data Processing | 3 | 6% | 7 | yes |
+| industry | Department/Specialty Retail Stores | 3 | 6% | 7 | yes |
+| industry | Industrial Specialties | 3 | 6% | 7 | yes |
+| industry | Oil & Gas Production | 3 | 6% | 7 | yes |
 | industry | Apparel | 2 | 4% | 7 | yes |
-| industry | Computer Software: Prepackaged Software | 2 | 4% | 7 | yes |
-| industry | Department/Specialty Retail Stores | 2 | 4% | 7 | yes |
+| industry | Auto Parts:O.E.M. | 2 | 4% | 7 | yes |
 | industry | Marine Transportation | 2 | 4% | 7 | yes |
-| industry | Medical/Dental Instruments | 2 | 4% | 7 | yes |
 | industry | Metal Fabrications | 2 | 4% | 7 | yes |
-| industry | Oil & Gas Production | 2 | 4% | 7 | yes |
-| industry | Auto Parts:O.E.M. | 1 | 2% | 7 | yes |
-| industry | Biotechnology: Pharmaceutical Preparations | 1 | 2% | 7 | yes |
+| industry | Semiconductors | 2 | 4% | 7 | yes |
 | industry | Building Products | 1 | 2% | 7 | yes |
 | industry | Catalog/Specialty Distribution | 1 | 2% | 7 | yes |
-| industry | Clothing/Shoe/Accessory Stores | 1 | 2% | 7 | yes |
-| industry | Computer Software: Programming Data Processing | 1 | 2% | 7 | yes |
+| industry | Consumer Electronics/Appliances | 1 | 2% | 7 | yes |
+| industry | Farming/Seeds/Milling | 1 | 2% | 7 | yes |
 
-Skipped by portfolio guardrails: AZZ (industry Industrial Specialties flagged industry-wide weakness via AIT (max 1)); MGNI (industry Computer Software: Programming Data Processing flagged industry-wide weakness via META (max 1)); PWR (shortlist full); VMC (shortlist full); XYL (shortlist full); VLTO (shortlist full); OSW (shortlist full); MAX (shortlist full); ABNB (shortlist full); AIT (shortlist full); APP (shortlist full); BROS (shortlist full); BSM (shortlist full); CNR (shortlist full); EOG (shortlist full); FSS (shortlist full); FSTR (shortlist full); KFY (shortlist full); LPG (shortlist full); META (shortlist full); PACS (shortlist full); PLPC (shortlist full); RRC (shortlist full); UFPI (shortlist full); V (shortlist full); VC (shortlist full); VFF (shortlist full); VPG (shortlist full); WLDN (shortlist full); INTU (shortlist full); ULS (shortlist full); TPC (shortlist full); CRWS (shortlist full); MSM (shortlist full); AMD (shortlist full); TWIN (shortlist full); M (shortlist full); CXDO (shortlist full); BCC (shortlist full); INNV (shortlist full); MPC (shortlist full); RMNI (shortlist full); TGLS (shortlist full); CELH (shortlist full); KRT (shortlist full); FTK (shortlist full); GEF (shortlist full); PNR (shortlist full); KRMD (shortlist full); NKE (shortlist full); WFRD (shortlist full); BLLN (shortlist full); TGT (shortlist full); DELL (shortlist full); SITE (shortlist full); ACMR (shortlist full); GPRE (shortlist full); KAI (shortlist full); NVT (shortlist full); BHE (shortlist full); IMKTA (shortlist full); PYPL (shortlist full); AA (shortlist full); EE (shortlist full); INTT (shortlist full); NOV (shortlist full); FLR (shortlist full); VIRC (shortlist full); NSYS (shortlist full); COHR (shortlist full); GWRE (shortlist full); ITRI (shortlist full); BE (shortlist full); HALO (shortlist full); FTLF (shortlist full); TSSI (shortlist full); LFUS (shortlist full); ADTN (shortlist full); SWIM (shortlist full); CLH (shortlist full); AMTM (shortlist full); BWMN (shortlist full); VFC (shortlist full); CVGI (shortlist full); MAT (shortlist full); YUM (shortlist full); SYY (shortlist full); HAS (shortlist full); ADNT (shortlist full); AWX (shortlist full)
+Skipped by portfolio guardrails: JCI (shortlist full); UBER (shortlist full); NOV (shortlist full); PWR (shortlist full); VMC (shortlist full); XYL (shortlist full); VLTO (shortlist full); OSW (shortlist full); ABNB (shortlist full); BSM (shortlist full); CHE (shortlist full); CNR (shortlist full); CRS (shortlist full); FSS (shortlist full); FSTR (shortlist full); INFU (shortlist full); KFY (shortlist full); LPG (shortlist full); META (shortlist full); OPRX (shortlist full); PACS (shortlist full); PLPC (shortlist full); RRC (shortlist full); UFPI (shortlist full); V (shortlist full); VFF (shortlist full); VPG (shortlist full); WLDN (shortlist full); INTU (shortlist full); ULS (shortlist full); TPC (shortlist full); CRWS (shortlist full); MSM (shortlist full); TWIN (shortlist full); VIRC (shortlist full); BCC (shortlist full); INNV (shortlist full); MPC (shortlist full); RMNI (shortlist full); ETON (shortlist full); TGLS (shortlist full); KRT (shortlist full); ADSK (shortlist full); THO (shortlist full); VSXY (shortlist full); FTK (shortlist full); GEF (shortlist full); ZETA (shortlist full); PNR (shortlist full); KRMD (shortlist full); PG (shortlist full); NPO (shortlist full); NKE (shortlist full); WFRD (shortlist full); BLLN (shortlist full); TGT (shortlist full); AMKR (shortlist full); DELL (shortlist full); SITE (shortlist full); ACMR (shortlist full); GPRE (shortlist full); KAI (shortlist full); NVT (shortlist full); BHE (shortlist full); MAX (shortlist full); IMKTA (shortlist full); PYPL (shortlist full); AA (shortlist full); EE (shortlist full); INTT (shortlist full); ITRI (shortlist full); FLR (shortlist full); HALO (shortlist full); NSYS (shortlist full); COHR (shortlist full); GWRE (shortlist full); BE (shortlist full); AMTM (shortlist full); BWMN (shortlist full); TSSI (shortlist full); LFUS (shortlist full); ADTN (shortlist full); SWIM (shortlist full); AWX (shortlist full); VFC (shortlist full); CVGI (shortlist full); MAT (shortlist full); YUM (shortlist full); SYY (shortlist full); HAS (shortlist full); CLH (shortlist full); XYZ (shortlist full); ADNT (shortlist full)
 
 ## Company memos
 
@@ -103,7 +104,7 @@ Score 1.00 | confidence medium | interpretation: stable | maturity wall 2028
 - Current assets / current liabilities = 1.43 [8][9]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 43.36x (projection: flat FCF) [10][11][12][13][14][15]
 
-*Judgment: The passages present generic risk factors and continued investment rather than evidence of a present credit weakness, so no company-specific or industry-wide deterioration is established.* (model judgment, not a filing fact)
+*Judgment: The passages contain only contingent risk-factor and accounting-estimate language, not evidence of actual or expected credit deterioration.* (model judgment, not a filing fact)
 
 [1] 10-K filed 2026-10-16, Item 7 / MD&A (Liquidity) (`acn-10-k-2026-10-16-item7`)
 [2] XBRL fact `xbrl:0001467373:TotalDebt:2026Q3`
@@ -120,6 +121,41 @@ Score 1.00 | confidence medium | interpretation: stable | maturity wall 2028
 [13] XBRL fact `xbrl:0001467373:DebtMaturity:2027`
 [14] XBRL fact `xbrl:0001467373:DebtMaturity:2028`
 [15] XBRL fact `xbrl:0001467373:DebtMaturity:2029`
+
+### AIT - APPLIED INDUSTRIAL TECHNOLOGIES INC (Industrials)
+Score 1.00 | confidence medium | interpretation: stable | maturity wall 2029
+
+**Filing facts (verbatim)**
+- •Applied's Annual Report on Form 10-K, quarterly reports on Form 10-Q, current reports on Form 8-K, and amendments to those reports, together with Section 16 insider beneficial stock ownership reports - these documents are posted as soon as reasonably practicable after they are electronically filed with, or furnished to, the Securities and Exchange Commission; [1]
+- We believe these considerations are accelerating consolidation across our sector both organically and through acquisitions as customers increase business with larger, more capable distributors and smaller providers face rising operational requirements. [1]
+- The Company uses the proceeds from the AR Securitization Facility as an alternative to other forms of debt. [2]
+- We operate in a highly competitive, fragmented industry. [3]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.50x [4][5][6][7][8]
+- EBITDA / interest expense (quarter) = 46.52x [8][9]
+- Current assets / current liabilities = 2.89 [10][11]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 7.93x (projection: flat FCF) [12][13][14][15][16][17]
+
+*Judgment: The passages disclose generic competitive and debt-servicing risks without reporting an actual one-time setback or lasting deterioration.* (model judgment, not a filing fact)
+
+[1] 10-K filed 2026-08-13, Item 1 (Business) (`ait-10-k-2026-08-13-item1`)
+[2] 10-Q filed 2026-10-27, Item 7 / MD&A (Liquidity) (`ait-10-q-2026-10-27-item7`)
+[3] 10-K filed 2026-08-13, Item 1A (Risk Factors) (`ait-10-k-2026-08-13-item1a-p1`)
+[4] XBRL fact `xbrl:0000109563:TotalDebt:2026Q3`
+[5] XBRL fact `xbrl:0000109563:EBITDA:2025Q4`
+[6] XBRL fact `xbrl:0000109563:EBITDA:2026Q1`
+[7] XBRL fact `xbrl:0000109563:EBITDA:2026Q2`
+[8] XBRL fact `xbrl:0000109563:EBITDA:2026Q3`
+[9] XBRL fact `xbrl:0000109563:InterestExpense:2026Q3`
+[10] XBRL fact `xbrl:0000109563:CurrentAssets:2026Q3`
+[11] XBRL fact `xbrl:0000109563:CurrentLiabilities:2026Q3`
+[12] XBRL fact `xbrl:0000109563:Cash:2026Q3`
+[13] XBRL fact `xbrl:0000109563:OperatingCashFlow:FY2026`
+[14] XBRL fact `xbrl:0000109563:Capex:FY2026`
+[15] XBRL fact `xbrl:0000109563:DebtMaturity:2027`
+[16] XBRL fact `xbrl:0000109563:DebtMaturity:2028`
+[17] XBRL fact `xbrl:0000109563:DebtMaturity:2029`
 
 ### AOS - SMITH A O CORP (Consumer Discretionary)
 Score 1.00 | confidence medium | interpretation: stable | maturity wall 2026
@@ -197,6 +233,39 @@ Score 1.00 | confidence medium | interpretation: stable
 [17] XBRL fact `xbrl:0001841666:DebtMaturity:2028`
 [18] XBRL fact `xbrl:0001841666:DebtMaturity:2029`
 
+### APP - AppLovin Corp (Technology)
+Score 1.00 | confidence medium | interpretation: stable
+
+**Filing facts (verbatim)**
+- Other income (expense), net, primarily includes interest earned on our cash and cash equivalents, fair value adjustments relating to our non-marketable equity securities, and foreign currency gains and losses. [1]
+- The amendments will be effective for annual periods beginning after December 15, 2027, and interim periods within those annual reporting periods. [2]
+- Non-Marketable Equity Securities Measured at Fair Value on a Non-Recurring Basis [3]
+- Subsequent Events [4]
+- Net cash provided by investing activities was $359.3 million for the nine months ended September 30, 2025, primarily consisting of $407.3 million in proceeds from the divestiture of our Apps Business, net of cash divested, which were partially offset by $22.4 million in earn-out payments related to prior acquisitions of intangible assets and $20.2 million in purchases of non-marketable equity securities. [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.58x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 34.14x [9][10]
+- Current assets / current liabilities = 3.80 [11][12]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.29x (projection: flat FCF) [13][14][5]
+
+*Judgment: The passages disclose company-specific control, restatement, and debt-repayment risks without evidence that any weakness is a one-time item or that credit is stable.* (model judgment, not a filing fact)
+
+[1] 10-Q filed 2026-11-04, Item 7 / MD&A (Liquidity) (`app-10-q-2026-11-04-item7`)
+[2] 10-Q filed 2026-11-04, Note: Basis of presentation (going concern / restatement) (`app-10-q-2026-11-04-note_basis`)
+[3] 10-Q filed 2026-11-04, Note: Derivatives & interest-rate exposure (`app-10-q-2026-11-04-note_derivatives`)
+[4] 10-Q filed 2026-11-04, Note: Subsequent events (`app-10-q-2026-11-04-note_subsequent`)
+[5] XBRL fact `xbrl:0001751008:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0001751008:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0001751008:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0001751008:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0001751008:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0001751008:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0001751008:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0001751008:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0001751008:Cash:2026Q3`
+[14] XBRL fact `xbrl:0001751008:OperatingCashFlow:FY2025`
+
 ### AWI - ARMSTRONG WORLD INDUSTRIES INC (Materials)
 Score 1.00 | confidence medium | interpretation: stable
 
@@ -233,114 +302,38 @@ Score 1.00 | confidence medium | interpretation: stable
 [17] XBRL fact `xbrl:0000007431:DebtMaturity:2029`
 
 ### AYI - ACUITY INC. (DE) (Industrials)
-Score 1.00 | confidence medium | interpretation: stable
+Score 1.00 | confidence medium | interpretation: setback | scope: industry
 
 **Filing facts (verbatim)**
 - Additionally, we pay a quarterly facility fee based on the average daily amount of the revolving credit facility (regardless of usage), which is determined, at the Company’s option, by the Company’s leverage ratio or credit rating level. [1]
 - This year-over-year increase was due primarily to a one-time $8.2 million tax benefit recorded in fiscal 2025 related to the expiration of the statute of limitations on tax reserves for uncertain tax positions. [2]
 - Subsequent Event [3]
 - During fiscal 2026, we repaid our outstanding term loan using cash on hand and proceeds from our Credit Agreement entered into on May 8, 2026. [2]
-- Decreased construction and renovation spending and consumer demand for our products and services, along with rising costs, may materially affect our future access to our sources of liquidity, particularly our cash flows from operations, financial condition, capitalization, and capital investments. [4]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.80x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 29.84x [9][10]
-- Current assets / current liabilities = 1.69 [11][12]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.13x (projection: flat FCF) [13][14][15][5]
+- Total debt / LTM EBITDA = 0.80x [4][5][6][7][8]
+- EBITDA / interest expense (quarter) = 29.84x [8][9]
+- Current assets / current liabilities = 1.69 [10][11]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.13x (projection: flat FCF) [12][13][14][4]
 
-*Judgment: The passages contain forward-looking industry and labor risk disclosures rather than realized credit weakening, consistent with a stable assessment and no established company-specific deterioration.* (model judgment, not a filing fact)
+*Judgment: The passages describe potential industry demand and cost pressures rather than a one-time setback expected to reverse.* (model judgment, not a filing fact)
+
+**Needs analyst review:** weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-K filed 2026-10-23, Note: Credit facilities & covenants (`ayi-10-k-2026-10-23-note_credit`)
 [2] 10-K filed 2026-10-23, Item 7 / MD&A (Liquidity) (`ayi-10-k-2026-10-23-item7`)
 [3] 10-K filed 2026-10-23, Note: Subsequent events (`ayi-10-k-2026-10-23-note_subsequent`)
-[4] 10-K filed 2026-10-23, Item 1A (Risk Factors) (`ayi-10-k-2026-10-23-item1a-p1`)
-[5] XBRL fact `xbrl:0001144215:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0001144215:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0001144215:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0001144215:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0001144215:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0001144215:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0001144215:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0001144215:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0001144215:Cash:2026Q3`
-[14] XBRL fact `xbrl:0001144215:OperatingCashFlow:FY2026`
-[15] XBRL fact `xbrl:0001144215:Capex:FY2026`
-
-### CHE - CHEMED CORP (Health Care)
-Score 1.00 | confidence medium | interpretation: setback | scope: unknown
-
-**Filing facts (verbatim)**
-- This Credit Agreement has a floating interest rate that is the secured overnight financing rate (“SOFR”) plus an additional tiered rate which varies based on our current leverage ratio. [1]
-- On April 10, 2026, we replaced the Prior Credit Agreement with a sixth amended and restated Credit Agreement. [2]
-- In some cases, however, a state or federal regulatory authority may take a number of adverse actions against a hospice program, including the imposition of fines, civil monetary penalties, payment suspensions, insertion of temporary management, temporary suspension of admission of new patients to the hospice’s service, implementing directed plans of correction or, in extreme circumstances, decertification from participation in the Medicare or Medicaid programs or revocation of the hospice’s license. [3]
-- We are subject to various lawsuits and claims in the normal course of our business. [2]
-- These changes generally normalize over a two-year period, as cash flow variations in one year are offset in the following year. [2]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 0.54x [4][5][6][7][8]
-- EBITDA / interest expense (quarter) = 54.28x [8][9]
-- Current assets / current liabilities = 1.11 [10][11]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.34x (projection: flat FCF) [12][13][14][4]
-
-*Judgment: The passages describe regulatory and company-specific risk factors but do not identify a one-time weakness expected to reverse.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-Q filed 2026-10-29, Note: Credit facilities & covenants (`che-10-q-2026-10-29-note_credit`)
-[2] 10-Q filed 2026-10-29, Item 7 / MD&A (Liquidity) (`che-10-q-2026-10-29-item7`)
-[3] 10-K filed 2026-02-27, Item 1 (Business) (`che-10-k-2026-02-27-item1`)
-[4] XBRL fact `xbrl:0000019584:TotalDebt:2026Q3`
-[5] XBRL fact `xbrl:0000019584:EBITDA:2025Q4`
-[6] XBRL fact `xbrl:0000019584:EBITDA:2026Q1`
-[7] XBRL fact `xbrl:0000019584:EBITDA:2026Q2`
-[8] XBRL fact `xbrl:0000019584:EBITDA:2026Q3`
-[9] XBRL fact `xbrl:0000019584:InterestExpense:2026Q3`
-[10] XBRL fact `xbrl:0000019584:CurrentAssets:2026Q3`
-[11] XBRL fact `xbrl:0000019584:CurrentLiabilities:2026Q3`
-[12] XBRL fact `xbrl:0000019584:Cash:2026Q3`
-[13] XBRL fact `xbrl:0000019584:OperatingCashFlow:FY2025`
-[14] XBRL fact `xbrl:0000019584:Capex:FY2025`
-
-### CRS - CARPENTER TECHNOLOGY CORP (Materials)
-Score 1.00 | confidence medium | interpretation: setback | scope: unknown
-
-**Filing facts (verbatim)**
-- We target minimum liquidity of $150.0 million, consisting of cash and cash equivalents added to available borrowing capacity under our Credit Facility. [1]
-- Interest on the borrowings under the Credit Facility accrues at variable rates which are determined based upon the Company's consolidated total leverage ratio. [2]
-- The third amendment and restatement of the Credit Facility extended the maturity to November 20, 2030. [1]
-- The Credit Facility amended and restated our then existing Second Amended and Restated Credit Agreement dated as of April 14, 2023, which had been set to expire on April 12, 2028. [1]
-- If a customer fails to meet the volume commitments (or the consumption schedule deviates from the agreed-upon terms of the firm price sales arrangements), we may need to absorb the gains or losses associated with the commodity forward contracts on a temporary basis. [1]
-- Like many other manufacturing companies in recent years, the Company, from time to time, has been named as a defendant in lawsuits alleging personal injury as a result of exposure to chemicals and substances in the workplace such as asbestos. [3]
-- The Company used the net proceeds from the issuance of the 2034 Notes to repay, in November 2025, $400.0 million and $300.0 million in aggregate principal amount of its senior unsecured Notes due July 2028 and March 2030, respectively, including any interest and premium due thereon, thereby redeeming such notes in full. [4]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 0.77x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 32.82x [9][10]
-- Current assets / current liabilities = 3.94 [11][12]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 99.00x (projection: flat FCF) [13][14][15][16][17][18]
-
-*Judgment: The passages discuss refinancing, liquidity, and a raw-material surcharge timing lag but do not state that a recent weakness is one-time and expected to reverse.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-Q filed 2026-10-22, Item 7 / MD&A (Liquidity) (`crs-10-q-2026-10-22-item7`)
-[2] 10-Q filed 2026-10-22, Note: Credit facilities & covenants (`crs-10-q-2026-10-22-note_credit`)
-[3] 10-Q filed 2026-10-22, Note: Commitments & contingencies (`crs-10-q-2026-10-22-note_commitments`)
-[4] 10-Q filed 2026-10-22, Debt & maturity footnote (`crs-10-q-2026-10-22-debt_footnote`)
-[5] XBRL fact `xbrl:0000017843:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0000017843:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0000017843:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0000017843:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0000017843:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0000017843:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0000017843:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0000017843:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0000017843:Cash:2026Q3`
-[14] XBRL fact `xbrl:0000017843:OperatingCashFlow:FY2026`
-[15] XBRL fact `xbrl:0000017843:Capex:FY2026`
-[16] XBRL fact `xbrl:0000017843:DebtMaturity:2027`
-[17] XBRL fact `xbrl:0000017843:DebtMaturity:2028`
-[18] XBRL fact `xbrl:0000017843:DebtMaturity:2029`
+[4] XBRL fact `xbrl:0001144215:TotalDebt:2026Q3`
+[5] XBRL fact `xbrl:0001144215:EBITDA:2025Q4`
+[6] XBRL fact `xbrl:0001144215:EBITDA:2026Q1`
+[7] XBRL fact `xbrl:0001144215:EBITDA:2026Q2`
+[8] XBRL fact `xbrl:0001144215:EBITDA:2026Q3`
+[9] XBRL fact `xbrl:0001144215:InterestExpense:2026Q3`
+[10] XBRL fact `xbrl:0001144215:CurrentAssets:2026Q3`
+[11] XBRL fact `xbrl:0001144215:CurrentLiabilities:2026Q3`
+[12] XBRL fact `xbrl:0001144215:Cash:2026Q3`
+[13] XBRL fact `xbrl:0001144215:OperatingCashFlow:FY2026`
+[14] XBRL fact `xbrl:0001144215:Capex:FY2026`
 
 ### CTAS - CINTAS CORP (Consumer Discretionary)
 Score 1.00 | confidence medium | interpretation: stable | maturity wall 2027
@@ -376,8 +369,77 @@ Score 1.00 | confidence medium | interpretation: stable | maturity wall 2027
 [15] XBRL fact `xbrl:0000723254:DebtMaturity:2028`
 [16] XBRL fact `xbrl:0000723254:DebtMaturity:2029`
 
+### EOG - EOG RESOURCES INC (Energy)
+Score 1.00 | confidence medium | interpretation: setback | scope: unknown
+
+**Filing facts (verbatim)**
+- At September 30, 2026, EOG maintained a strong financial and liquidity position, including $5.7 billion of cash and cash equivalents on hand and $3.0 billion of availability under its senior unsecured revolving credit facility (which remained undrawn). [1]
+- The Agreement contains representations, warranties, covenants and events of default that EOG believes are customary for investment-grade, senior unsecured commercial bank credit agreements, including a financial covenant for the maintenance of a ratio of Total Debt-to-Total Capitalization (as such terms are defined in the Agreement) of no greater than 65%. [2]
+- EOG's Annual Reports on Form 10-K, Quarterly Reports on Form 10‑Q, Current Reports on Form 8-K and any amendments to those reports (including related exhibits and supplemental schedules) filed or furnished pursuant to Section 13(a) or 15(d) of the Securities Exchange Act of 1934 (as amended) are made available, free of charge, through EOG's website, as soon as reasonably practicable after such reports have been filed with, or furnished to, the United States Securities and Exchange Commission (SEC). [3]
+- Non-Recurring Fair Value Measurements. [4]
+- For discussion regarding EOG's payment of dividends and share repurchases, see ITEM 1A, Risk Factors and ITEM 5, Market for Registrant's Common Equity, Related Stockholder Matters and Issuer Purchases of Equity Securities in EOG's 2025 Annual Report and Part II, Item 2, Unregistered Sales of Equity Securities and Use of Proceeds in this Quarterly Report on Form 10-Q. [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.51x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 72.81x [9][10]
+- Current assets / current liabilities = 1.90 [11][12]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.35x (projection: flat FCF) [13][14][15][5]
+
+*Judgment: The passages describe a strong liquidity position and covenant compliance without identifying any weakness, so they do not support a temporary setback or distinguish company-specific from industry-wide conditions.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
+
+[1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`eog-10-q-2026-11-05-item7`)
+[2] 10-Q filed 2026-11-05, Note: Credit facilities & covenants (`eog-10-q-2026-11-05-note_credit`)
+[3] 10-K filed 2026-02-24, Item 1 (Business) (`eog-10-k-2026-02-24-item1`)
+[4] 10-Q filed 2026-11-05, Note: Derivatives & interest-rate exposure (`eog-10-q-2026-11-05-note_derivatives`)
+[5] XBRL fact `xbrl:0000821189:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0000821189:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0000821189:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0000821189:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0000821189:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0000821189:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0000821189:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0000821189:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0000821189:Cash:2026Q3`
+[14] XBRL fact `xbrl:0000821189:OperatingCashFlow:FY2025`
+[15] XBRL fact `xbrl:0000821189:Capex:FY2025`
+
+### FTLF - FITLIFE BRANDS, INC. (Health Care)
+Score 1.00 | confidence medium | interpretation: setback | scope: company
+
+**Filing facts (verbatim)**
+- Our principal sources of liquidity at September 30, 2026 consisted of $689 of cash and $8,047 of accounts receivable. [1]
+- First Amendment to the Credit Agreement [1]
+- The Amended Credit Agreement restates the financial covenants for quarters ending September 30, 2026 through September 30, 2027 as follows: [1]
+- For the three months ended September 30, 2026, there was no merger and acquisition related expense, compared to $820 during the same quarter of the prior year, which was driven by non-recurring transaction costs related to the Irwin acquisition during 2025. [1]
+- Of this amount, $29,750 was funded using proceeds from a new term loan provided by the Bank, $6,000 was funded from a new $10,000 revolving line of credit from the Bank, and the remainder was funded from the Company’s available cash balances. [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.92x [2][3][4][5][6]
+- EBITDA / interest expense (quarter) = 4.44x [6][7]
+- Current assets / current liabilities = 1.64 [8][9]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.77x (projection: flat FCF) [10][11][12][2]
+
+*Judgment: The passages describe persistent leverage and liquidity risks tied to acquisitions and variable-rate debt, not a one-time weakness expected to reverse.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
+
+[1] 10-Q filed 2026-11-16, Item 7 / MD&A (Liquidity) (`ftlf-10-q-2026-11-16-item7`)
+[2] XBRL fact `xbrl:0001374328:TotalDebt:2026Q3`
+[3] XBRL fact `xbrl:0001374328:EBITDA:2025Q4`
+[4] XBRL fact `xbrl:0001374328:EBITDA:2026Q1`
+[5] XBRL fact `xbrl:0001374328:EBITDA:2026Q2`
+[6] XBRL fact `xbrl:0001374328:EBITDA:2026Q3`
+[7] XBRL fact `xbrl:0001374328:InterestExpense:2026Q3`
+[8] XBRL fact `xbrl:0001374328:CurrentAssets:2026Q3`
+[9] XBRL fact `xbrl:0001374328:CurrentLiabilities:2026Q3`
+[10] XBRL fact `xbrl:0001374328:Cash:2026Q3`
+[11] XBRL fact `xbrl:0001374328:OperatingCashFlow:FY2025`
+[12] XBRL fact `xbrl:0001374328:Capex:FY2025`
+
 ### GOOGL - Alphabet Inc. (Technology)
-Score 1.00 | confidence medium | interpretation: setback | scope: industry
+Score 1.00 | confidence medium | interpretation: stable
 
 **Filing facts (verbatim)**
 - We have agreed to defend and/or indemnify certain parties against losses arising from a breach of representations or covenants, or out of intellectual property infringement or other claims made against certain parties. [1]
@@ -385,73 +447,36 @@ Score 1.00 | confidence medium | interpretation: setback | scope: industry
 - •Search: In October 2020, the US Department of Justice (DOJ) and a number of state Attorneys General filed a lawsuit in the US District Court for the District of Columbia concerning Google's Search and Search advertising practices and its compliance with US antitrust laws. [1]
 - Certain of our non-marketable securities include our investments in variable interest entities (VIEs) where we are not the primary beneficiary. [3]
 - •During the three months ended September 30, 2026, we issued 12 million shares of Class A stock for net proceeds of $4.3 billion and 24 million shares of Class C stock for net proceeds of $8.1 billion. [4]
+- We believe AI is quickly reshaping the advertising industry, including how ads are delivered online, and we and our competitors are constantly adjusting to meet this shift and provide new and evolving advertising formats. [5]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.80x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 41.96x [9][10]
-- Current assets / current liabilities = 2.79 [11][12]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 37.11x (projection: flat FCF) [13][14][15][16][17][18][19]
+- Total debt / LTM EBITDA = 0.80x [6][7][8][9][10]
+- EBITDA / interest expense (quarter) = 41.96x [10][11]
+- Current assets / current liabilities = 2.79 [12][13]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 37.11x (projection: flat FCF) [14][15][16][17][18][19][20]
 
-*Judgment: The passages describe ongoing structural pressures such as shifting advertising formats, competition, and margin erosion rather than a discrete one-time item expected to reverse, and they frame these pressures as industry-wide conditions affecting competitors as well.* (model judgment, not a filing fact)
-
-**Needs analyst review:** weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan; industry Computer Software: Programming Data Processing flagged industry-wide weakness via META
+*Judgment: The passages describe generic competitive and legal risk factors rather than an actual weakening of credit, so they support a stable view.* (model judgment, not a filing fact)
 
 [1] 10-Q filed 2026-10-29, Note: Commitments & contingencies (`googl-10-q-2026-10-29-note_commitments`)
 [2] 10-K filed 2026-02-05, Item 1 (Business) (`googl-10-k-2026-02-05-item1`)
 [3] 10-Q filed 2026-10-29, Note: Derivatives & interest-rate exposure (`googl-10-q-2026-10-29-note_derivatives`)
 [4] 10-Q filed 2026-10-29, Item 7 / MD&A (Liquidity) (`googl-10-q-2026-10-29-item7`)
-[5] XBRL fact `xbrl:0001652044:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0001652044:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0001652044:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0001652044:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0001652044:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0001652044:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0001652044:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0001652044:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0001652044:Cash:2026Q3`
-[14] XBRL fact `xbrl:0001652044:OperatingCashFlow:FY2025`
-[15] XBRL fact `xbrl:0001652044:Capex:FY2025`
-[16] XBRL fact `xbrl:0001652044:DebtMaturity:2026`
-[17] XBRL fact `xbrl:0001652044:DebtMaturity:2027`
-[18] XBRL fact `xbrl:0001652044:DebtMaturity:2028`
-[19] XBRL fact `xbrl:0001652044:DebtMaturity:2029`
-
-### INFU - InfuSystem Holdings, Inc (Health Care)
-Score 1.00 | confidence medium | interpretation: stable
-
-**Filing facts (verbatim)**
-- Cash and cash equivalents | 9,108 | 3,186 [1]
-- As of September 30, 2026, the Company was in compliance with all debt-related covenants under the 2021 Credit Agreement, as amended. [2]
-- On April 26, 2023, the Company entered into a First Amendment to the 2021 Credit Agreement (the “First Amendment”) with the Agent and the lenders party thereto, which amended the 2021 Credit Agreement. [1]
-- The increase in accounts receivable during 2026 was partially attributable to a change in mix of revenue favoring Patient Services which has a longer average revenue collection time as compared with Device Solutions and due to a temporary ERP related order-to-cash process disruption. [1]
-- The occurrence of an event of default will permit the lenders to terminate commitments to lend under the Revolving Facility and accelerate payment of all amounts outstanding thereunder. [3]
-- While collection timing remains below historical levels, management believes the underlying receivables are substantially collectible and expects continued improvement in cash collections as reformatting efforts are completed and customer billing processes normalize. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 0.73x [4][5][6][7][8]
-- EBITDA / interest expense (quarter) = 30.61x [8][9]
-- Current assets / current liabilities = 2.68 [10][11]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 99.00x (projection: flat FCF) [12][13][14][15][16][17]
-
-*Judgment: The passages show extended revolver maturity and higher available liquidity with no reported covenant, going-concern, or operating weakness, consistent with a stable credit profile and offering no industry-specific signal.* (model judgment, not a filing fact)
-
-[1] 10-Q filed 2026-11-09, Item 7 / MD&A (Liquidity) (`infu-10-q-2026-11-09-item7`)
-[2] 10-Q filed 2026-11-09, Note: Credit facilities & covenants (`infu-10-q-2026-11-09-note_credit`)
-[3] 10-Q filed 2026-11-09, Debt & maturity footnote (`infu-10-q-2026-11-09-debt_footnote`)
-[4] XBRL fact `xbrl:0001337013:TotalDebt:2026Q3`
-[5] XBRL fact `xbrl:0001337013:EBITDA:2025Q4`
-[6] XBRL fact `xbrl:0001337013:EBITDA:2026Q1`
-[7] XBRL fact `xbrl:0001337013:EBITDA:2026Q2`
-[8] XBRL fact `xbrl:0001337013:EBITDA:2026Q3`
-[9] XBRL fact `xbrl:0001337013:InterestExpense:2026Q3`
-[10] XBRL fact `xbrl:0001337013:CurrentAssets:2026Q3`
-[11] XBRL fact `xbrl:0001337013:CurrentLiabilities:2026Q3`
-[12] XBRL fact `xbrl:0001337013:Cash:2026Q3`
-[13] XBRL fact `xbrl:0001337013:OperatingCashFlow:FY2025`
-[14] XBRL fact `xbrl:0001337013:Capex:FY2025`
-[15] XBRL fact `xbrl:0001337013:DebtMaturity:2027`
-[16] XBRL fact `xbrl:0001337013:DebtMaturity:2028`
-[17] XBRL fact `xbrl:0001337013:DebtMaturity:2029`
+[5] 10-K filed 2026-02-05, Item 1A (Risk Factors) (`googl-10-k-2026-02-05-item1a-p1`)
+[6] XBRL fact `xbrl:0001652044:TotalDebt:2026Q3`
+[7] XBRL fact `xbrl:0001652044:EBITDA:2025Q4`
+[8] XBRL fact `xbrl:0001652044:EBITDA:2026Q1`
+[9] XBRL fact `xbrl:0001652044:EBITDA:2026Q2`
+[10] XBRL fact `xbrl:0001652044:EBITDA:2026Q3`
+[11] XBRL fact `xbrl:0001652044:InterestExpense:2026Q3`
+[12] XBRL fact `xbrl:0001652044:CurrentAssets:2026Q3`
+[13] XBRL fact `xbrl:0001652044:CurrentLiabilities:2026Q3`
+[14] XBRL fact `xbrl:0001652044:Cash:2026Q3`
+[15] XBRL fact `xbrl:0001652044:OperatingCashFlow:FY2025`
+[16] XBRL fact `xbrl:0001652044:Capex:FY2025`
+[17] XBRL fact `xbrl:0001652044:DebtMaturity:2026`
+[18] XBRL fact `xbrl:0001652044:DebtMaturity:2027`
+[19] XBRL fact `xbrl:0001652044:DebtMaturity:2028`
+[20] XBRL fact `xbrl:0001652044:DebtMaturity:2029`
 
 ### MATX - Matson, Inc. (Industrials)
 Score 1.00 | confidence medium | interpretation: stable | maturity wall 2027
@@ -468,7 +493,7 @@ Score 1.00 | confidence medium | interpretation: stable | maturity wall 2027
 - Current assets / current liabilities = 1.10 [9][10]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 7.11x (projection: flat FCF) [11][12][13][14][15][16]
 
-*Judgment: The passages indicate stronger ocean transportation income, a prior-year one-time tax benefit, reduced total debt, and ample revolver capacity, so no meaningful credit weakening is shown.* (model judgment, not a filing fact)
+*Judgment: The filings show debt reduction, ample revolver availability, and a prior-year one-time tax benefit rather than any current credit deterioration.* (model judgment, not a filing fact)
 
 [1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`matx-10-q-2026-11-05-item7`)
 [2] 10-Q filed 2026-11-05, Note: Credit facilities & covenants (`matx-10-q-2026-11-05-note_credit`)
@@ -488,14 +513,13 @@ Score 1.00 | confidence medium | interpretation: stable | maturity wall 2027
 [16] XBRL fact `xbrl:0000003453:DebtMaturity:2029`
 
 ### MZTI - MARZETTI CO (Consumer Staples)
-Score 1.00 | confidence medium | interpretation: stable
+Score 1.00 | confidence medium | interpretation: setback | scope: industry
 
 **Filing facts (verbatim)**
 - •Revolving credit availability of $200 million with potential to expand the revolving credit availability to $400 million based on consent of the Administrative Agent and any incremental lenders and certain other conditions. [1]
 - For the three months ended September 30, 2026, interest expense totaled $2.8 million related to borrowings under the First Amendment to our Credit Agreement (“Credit Agreement”). [2]
 - The decline in Foodservice segment net sales was driven by the impact of prior-year sales attributed to a temporary supply agreement (“TSA”) resulting from our February 2025 acquisition of a sauce and dressing production facility located in Atlanta, Georgia (“Atlanta plant”), as well as the unfavorable impact of the cyclospora outbreak. [2]
 - This increase primarily reflects higher levels of share repurchases and current-year debt repayments, net of proceeds from borrowings. [2]
-- These charges consisted of one-time termination benefits and other closing costs. [2]
 
 **Computed ratios**
 - Total debt / LTM EBITDA = 0.66x [3][4][5][6][7]
@@ -503,7 +527,9 @@ Score 1.00 | confidence medium | interpretation: stable
 - Current assets / current liabilities = 1.53 [9][10]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 21.20x (projection: flat FCF) [11][12][13][14][15][16]
 
-*Judgment: The passages show only a one-time charge alongside strong covenant compliance and ample liquidity, with no evidence of a lasting company or industry-wide weakening.* (model judgment, not a filing fact)
+*Judgment: The passages describe evolving consumer health perceptions and retail consolidation as ongoing industry conditions, with no indication of a one-time setback expected to reverse.* (model judgment, not a filing fact)
+
+**Needs analyst review:** weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-Q filed 2026-11-03, Note: Credit facilities & covenants (`mzti-10-q-2026-11-03-note_credit`)
 [2] 10-Q filed 2026-11-03, Item 7 / MD&A (Liquidity) (`mzti-10-q-2026-11-03-item7`)
@@ -531,28 +557,30 @@ Score 1.00 | confidence medium | interpretation: stable
 - Our corporate structure contains no variable interest entities. [2]
 - Some of these covenants include default and/or cross-default provisions that could require acceleration of repayment of loans in the event of default. [1]
 - In 2025, we generated proceeds from long-term debt of $855.0 million which was used to pay off all existing short-term working capital loans, and is associated with certain restrictive covenants as described below with respect to certain coverage ratios and maximum investment amounts. [1]
+- Our business is subject to complex and evolving industry-specific laws and regulations regarding the collection and transfer of personal data. [3]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.64x [3][4][5][6][7]
-- EBITDA / interest expense (quarter) = 11.31x [7][8]
-- Current assets / current liabilities = 3.55 [9][10]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 9.94x (projection: flat FCF) [11][12][13][3]
+- Total debt / LTM EBITDA = 0.64x [4][5][6][7][8]
+- EBITDA / interest expense (quarter) = 11.31x [8][9]
+- Current assets / current liabilities = 3.55 [10][11]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 9.94x (projection: flat FCF) [12][13][14][4]
 
-*Judgment: The company shows a return to positive operating cash flow and adequate projected liquidity, with risk factors that are generic rather than evidence of a lasting credit deterioration.* (model judgment, not a filing fact)
+*Judgment: The passages disclose contingent regulatory, liquidity, retention, and data-protection risks without reporting a current or lasting weakening of credit.* (model judgment, not a filing fact)
 
 [1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`onc-10-q-2026-11-05-item7`)
 [2] 10-K filed 2026-02-26, Item 1 (Business) (`onc-10-k-2026-02-26-item1`)
-[3] XBRL fact `xbrl:0001651308:TotalDebt:2026Q3`
-[4] XBRL fact `xbrl:0001651308:EBITDA:2025Q4`
-[5] XBRL fact `xbrl:0001651308:EBITDA:2026Q1`
-[6] XBRL fact `xbrl:0001651308:EBITDA:2026Q2`
-[7] XBRL fact `xbrl:0001651308:EBITDA:2026Q3`
-[8] XBRL fact `xbrl:0001651308:InterestExpense:2026Q3`
-[9] XBRL fact `xbrl:0001651308:CurrentAssets:2026Q3`
-[10] XBRL fact `xbrl:0001651308:CurrentLiabilities:2026Q3`
-[11] XBRL fact `xbrl:0001651308:Cash:2026Q3`
-[12] XBRL fact `xbrl:0001651308:OperatingCashFlow:FY2025`
-[13] XBRL fact `xbrl:0001651308:Capex:FY2025`
+[3] 10-K filed 2026-02-26, Item 1A (Risk Factors) (`onc-10-k-2026-02-26-item1a-p20`)
+[4] XBRL fact `xbrl:0001651308:TotalDebt:2026Q3`
+[5] XBRL fact `xbrl:0001651308:EBITDA:2025Q4`
+[6] XBRL fact `xbrl:0001651308:EBITDA:2026Q1`
+[7] XBRL fact `xbrl:0001651308:EBITDA:2026Q2`
+[8] XBRL fact `xbrl:0001651308:EBITDA:2026Q3`
+[9] XBRL fact `xbrl:0001651308:InterestExpense:2026Q3`
+[10] XBRL fact `xbrl:0001651308:CurrentAssets:2026Q3`
+[11] XBRL fact `xbrl:0001651308:CurrentLiabilities:2026Q3`
+[12] XBRL fact `xbrl:0001651308:Cash:2026Q3`
+[13] XBRL fact `xbrl:0001651308:OperatingCashFlow:FY2025`
+[14] XBRL fact `xbrl:0001651308:Capex:FY2025`
 
 ### QNST - QUINSTREET, INC (Industrials)
 Score 1.00 | confidence medium | interpretation: stable
@@ -573,7 +601,7 @@ Score 1.00 | confidence medium | interpretation: stable
 - Current assets / current liabilities = 1.32 [12][13]
 - (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 7.50x (projection: flat FCF) [14][15][16][6]
 
-*Judgment: Liquidity and debt terms remain adequate, and the cited revenue sensitivity is tied to industry-wide auto insurance conditions rather than a company-specific deterioration.* (model judgment, not a filing fact)
+*Judgment: Liquidity is ample with substantial undrawn revolver capacity, and no passage shows a current covenant, going-concern, or operating deterioration.* (model judgment, not a filing fact)
 
 [1] 10-Q filed 2026-11-06, Item 7 / MD&A (Liquidity) (`qnst-10-q-2026-11-06-item7`)
 [2] 10-Q filed 2026-11-06, Note: Credit facilities & covenants (`qnst-10-q-2026-11-06-note_credit`)
@@ -659,35 +687,75 @@ Score 1.00 | confidence medium | interpretation: setback | scope: industry | mat
 - Effect of exchange rate changes on cash and cash equivalents | 6 | (12) | 18 [1]
 - On July 23, 2026, the U.S. Administration announced the final remedy in the Section 301 investigations relating to forced labor practices, imposing new tariff rates ranging from 10% to 12.5% on most imports from certain countries, effective upon the expiration of the temporary Section 122 tariffs. [1]
 - ◦SG&A expenses as a percentage of net sales, increased 680 basis points mainly driven by higher marketing spend and deleverage of fixed costs on lower net sales. [1]
+- We estimate the amount of the probable refund to be $114.7 million, which was recorded as a receivable. [2]
+- Changing tariff rates and shifting trade policies have created significant uncertainty for suppliers, consumers, and us, and our efforts to mitigate the impacts of tariffs are time-consuming and costly and may not be effective. [2]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.90x [2][3][4][5][6]
-- EBITDA / interest expense (quarter) = 16.00x [6][7]
-- Current assets / current liabilities = 1.24 [8][9]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 15.22x (projection: flat FCF) [10][11][12][13][14][15]
+- Total debt / LTM EBITDA = 0.90x [3][4][5][6][7]
+- EBITDA / interest expense (quarter) = 16.00x [7][8]
+- Current assets / current liabilities = 1.24 [9][10]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 15.22x (projection: flat FCF) [11][12][13][14][15][16]
 
-*Judgment: Although a probable tariff refund is recorded, the filing emphasizes continuing tariff and trade-policy uncertainty that may not be mitigated, so the weakness is not shown to be a one-time setback and is industry-wide.* (model judgment, not a filing fact)
+*Judgment: Tariff costs are expected to reverse through probable refunds, while trade-policy uncertainty affects the broader industry.* (model judgment, not a filing fact)
 
 **Needs analyst review:** weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`tpr-10-q-2026-11-05-item7`)
-[2] XBRL fact `xbrl:0001116132:TotalDebt:2026Q3`
-[3] XBRL fact `xbrl:0001116132:EBITDA:2025Q4`
-[4] XBRL fact `xbrl:0001116132:EBITDA:2026Q1`
-[5] XBRL fact `xbrl:0001116132:EBITDA:2026Q2`
-[6] XBRL fact `xbrl:0001116132:EBITDA:2026Q3`
-[7] XBRL fact `xbrl:0001116132:InterestExpense:2026Q3`
-[8] XBRL fact `xbrl:0001116132:CurrentAssets:2026Q3`
-[9] XBRL fact `xbrl:0001116132:CurrentLiabilities:2026Q3`
-[10] XBRL fact `xbrl:0001116132:Cash:2026Q3`
-[11] XBRL fact `xbrl:0001116132:OperatingCashFlow:FY2026`
-[12] XBRL fact `xbrl:0001116132:Capex:FY2026`
-[13] XBRL fact `xbrl:0001116132:DebtMaturity:2027`
-[14] XBRL fact `xbrl:0001116132:DebtMaturity:2028`
-[15] XBRL fact `xbrl:0001116132:DebtMaturity:2029`
+[2] 10-K filed 2026-08-13, Item 1A (Risk Factors) (`tpr-10-k-2026-08-13-item1a-p1`)
+[3] XBRL fact `xbrl:0001116132:TotalDebt:2026Q3`
+[4] XBRL fact `xbrl:0001116132:EBITDA:2025Q4`
+[5] XBRL fact `xbrl:0001116132:EBITDA:2026Q1`
+[6] XBRL fact `xbrl:0001116132:EBITDA:2026Q2`
+[7] XBRL fact `xbrl:0001116132:EBITDA:2026Q3`
+[8] XBRL fact `xbrl:0001116132:InterestExpense:2026Q3`
+[9] XBRL fact `xbrl:0001116132:CurrentAssets:2026Q3`
+[10] XBRL fact `xbrl:0001116132:CurrentLiabilities:2026Q3`
+[11] XBRL fact `xbrl:0001116132:Cash:2026Q3`
+[12] XBRL fact `xbrl:0001116132:OperatingCashFlow:FY2026`
+[13] XBRL fact `xbrl:0001116132:Capex:FY2026`
+[14] XBRL fact `xbrl:0001116132:DebtMaturity:2027`
+[15] XBRL fact `xbrl:0001116132:DebtMaturity:2028`
+[16] XBRL fact `xbrl:0001116132:DebtMaturity:2029`
+
+### VC - VISTEON CORP (Consumer Discretionary)
+Score 1.00 | confidence medium | interpretation: setback | scope: company
+
+**Filing facts (verbatim)**
+- As of September 30, 2026, the Company had total cash and cash equivalents of $466 million, including $2 million of restricted cash and $90 million of cash attributable to the Company's joint venture partners should the Company elect to issue cash dividends. [1]
+- The Credit Agreement requires compliance with customary affirmative and negative covenants and contains customary events of default. [2]
+- Other income, net for the nine months ended September 30, 2026 consisted primarily of net pension financing benefits, partially offset by acquisition costs and debt amendment fees. [1]
+- On April 27, 2026, the Company entered into an amended and restated Credit Agreement which included a $300 million Term Loan A Facility and a $400 million Revolving Credit Facility. [3]
+- Other cost performance, design changes and other net sales decreased by $6 million, primarily due to the non-recurrence of one-time items, partially offset by sales from the recently acquired engineering services companies. [1]
+- The Company presents its derivative positions and any related material collateral under master netting arrangements that provide for the net settlement of contracts, by counterparty, in the event of default or termination. [4]
+- The Company’s net cash inflows and outflows exposed to the risk of changes in foreign currency exchange rates arise from the sale of products in countries other than the manufacturing source, foreign currency denominated supplier payments, debt and other payables, subsidiary dividends, investments in subsidiaries, and anticipated foreign currency denominated transaction proceeds. [4]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.93x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 10.50x [9][10]
+- Current assets / current liabilities = 1.61 [11][12]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 5.57x (projection: flat FCF) [13][14][5]
+
+*Judgment: The filing attributes lower earnings to discrete warranty charges and non-recurring items while citing a strong balance sheet, supporting a temporary company-specific setback.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
+
+[1] 10-Q filed 2026-10-22, Item 7 / MD&A (Liquidity) (`vc-10-q-2026-10-22-item7`)
+[2] 10-Q filed 2026-10-22, Note: Credit facilities & covenants (`vc-10-q-2026-10-22-note_credit`)
+[3] 10-Q filed 2026-10-22, Debt & maturity footnote (`vc-10-q-2026-10-22-debt_footnote`)
+[4] 10-Q filed 2026-10-22, Note: Derivatives & interest-rate exposure (`vc-10-q-2026-10-22-note_derivatives`)
+[5] XBRL fact `xbrl:0001111335:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0001111335:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0001111335:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0001111335:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0001111335:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0001111335:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0001111335:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0001111335:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0001111335:Cash:2026Q3`
+[14] XBRL fact `xbrl:0001111335:OperatingCashFlow:FY2025`
 
 ### VLGEA - VILLAGE SUPER MARKET INC (Consumer Staples)
-Score 1.00 | confidence medium | interpretation: setback | scope: company
+Score 1.00 | confidence medium | interpretation: stable
 
 **Filing facts (verbatim)**
 - Net increase (decrease) in cash and cash equivalents | 20,140 | (6,562) | 26,702 [1]
@@ -697,31 +765,31 @@ Score 1.00 | confidence medium | interpretation: setback | scope: company
 - Village denies the allegations in this lawsuit and is defending against the claims. [3]
 - Off-balance Sheet Arrangements [1]
 - The $13,825 net decline in cash used in investing activities was due primarily to a $5,024 decrease in capital expenditures, proceeds from the sales of assets of $4,504 in fiscal 2026 primarily attributable to the sale of real estate assets of our closed automated micro-fulfillment center in south New Jersey and acquisition costs of $8,133 to purchase right-of-use assets in fiscal 2025. [1]
+- In fiscal 2025, Company recognized non-cash impairment charges of $1,462 on the long-lived assets of one Gourmet Garage store and real estate assets classified as held for sale related to the closed automated micro-fulfillment center in south New Jersey. [4]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.54x [4][5][6][7][8]
-- EBITDA / interest expense (quarter) = 31.90x [8][9]
-- Current assets / current liabilities = 1.14 [10][11]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 5.47x (projection: flat FCF) [12][13][14][4]
+- Total debt / LTM EBITDA = 0.54x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 31.90x [9][10]
+- Current assets / current liabilities = 1.14 [11][12]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 5.47x (projection: flat FCF) [13][14][15][5]
 
-*Judgment: The only weakness disclosed is a discrete non-cash impairment tied to specific store and facility closures rather than a broad or continuing erosion of operating performance, and the passages show no covenant, liquidity, or going-concern strain.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
+*Judgment: The passages show only prior one-time impairment charges tied to specific store closures and no lasting credit deterioration.* (model judgment, not a filing fact)
 
 [1] 10-K filed 2026-10-08, Item 7 / MD&A (Liquidity) (`vlgea-10-k-2026-10-08-item7`)
 [2] 10-K filed 2026-10-08, Note: Credit facilities & covenants (`vlgea-10-k-2026-10-08-note_credit`)
 [3] 10-K filed 2026-10-08, Note: Commitments & contingencies (`vlgea-10-k-2026-10-08-note_commitments`)
-[4] XBRL fact `xbrl:0000103595:TotalDebt:2026Q3`
-[5] XBRL fact `xbrl:0000103595:EBITDA:2025Q4`
-[6] XBRL fact `xbrl:0000103595:EBITDA:2026Q1`
-[7] XBRL fact `xbrl:0000103595:EBITDA:2026Q2`
-[8] XBRL fact `xbrl:0000103595:EBITDA:2026Q3`
-[9] XBRL fact `xbrl:0000103595:InterestExpense:2026Q3`
-[10] XBRL fact `xbrl:0000103595:CurrentAssets:2026Q3`
-[11] XBRL fact `xbrl:0000103595:CurrentLiabilities:2026Q3`
-[12] XBRL fact `xbrl:0000103595:Cash:2026Q3`
-[13] XBRL fact `xbrl:0000103595:OperatingCashFlow:FY2026`
-[14] XBRL fact `xbrl:0000103595:Capex:FY2026`
+[4] 10-K filed 2026-10-08, Note: Basis of presentation (going concern / restatement) (`vlgea-10-k-2026-10-08-note_basis`)
+[5] XBRL fact `xbrl:0000103595:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0000103595:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0000103595:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0000103595:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0000103595:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0000103595:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0000103595:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0000103595:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0000103595:Cash:2026Q3`
+[14] XBRL fact `xbrl:0000103595:OperatingCashFlow:FY2026`
+[15] XBRL fact `xbrl:0000103595:Capex:FY2026`
 
 ### VRT - Vertiv Holdings Co (Technology)
 Score 1.00 | confidence medium | interpretation: stable | maturity wall 2028
@@ -769,27 +837,29 @@ Score 1.00 | confidence medium | interpretation: stable
 **Filing facts (verbatim)**
 - At August 31, 2026, we had a total of $70.6 million in cash and cash equivalents. [1]
 - Excluding these one-time items, on a non-GAAP basis, net income would have increased 6% compared to prior year. [1]
+- Fluctuations in gasoline and diesel fuel prices, driven in part by crude oil price volatility, increased regulations imposed on the freight industry, and higher demand for transportation services have resulted in increased freight costs. [2]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 0.72x [2][3][4][5][6]
-- EBITDA / interest expense (quarter) = 32.31x [6][7]
-- Current assets / current liabilities = 2.57 [8][9]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.22x (projection: flat FCF) [10][11][12][2]
+- Total debt / LTM EBITDA = 0.72x [3][4][5][6][7]
+- EBITDA / interest expense (quarter) = 32.31x [7][8]
+- Current assets / current liabilities = 2.57 [9][10]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 4.22x (projection: flat FCF) [11][12][13][3]
 
-*Judgment: The passages describe contingent risk factors rather than a realized credit weakening, so they do not indicate deterioration.* (model judgment, not a filing fact)
+*Judgment: The passages describe generic tariff and freight cost risks rather than a company-specific credit deterioration, consistent with no meaningful weakening.* (model judgment, not a filing fact)
 
 [1] 10-K filed 2026-10-26, Item 7 / MD&A (Liquidity) (`wdfc-10-k-2026-10-26-item7`)
-[2] XBRL fact `xbrl:0000105132:TotalDebt:2026Q3`
-[3] XBRL fact `xbrl:0000105132:EBITDA:2025Q4`
-[4] XBRL fact `xbrl:0000105132:EBITDA:2026Q1`
-[5] XBRL fact `xbrl:0000105132:EBITDA:2026Q2`
-[6] XBRL fact `xbrl:0000105132:EBITDA:2026Q3`
-[7] XBRL fact `xbrl:0000105132:InterestExpense:2026Q3`
-[8] XBRL fact `xbrl:0000105132:CurrentAssets:2026Q3`
-[9] XBRL fact `xbrl:0000105132:CurrentLiabilities:2026Q3`
-[10] XBRL fact `xbrl:0000105132:Cash:2026Q3`
-[11] XBRL fact `xbrl:0000105132:OperatingCashFlow:FY2026`
-[12] XBRL fact `xbrl:0000105132:Capex:FY2026`
+[2] 10-K filed 2026-10-26, Item 1A (Risk Factors) (`wdfc-10-k-2026-10-26-item1a-p4`)
+[3] XBRL fact `xbrl:0000105132:TotalDebt:2026Q3`
+[4] XBRL fact `xbrl:0000105132:EBITDA:2025Q4`
+[5] XBRL fact `xbrl:0000105132:EBITDA:2026Q1`
+[6] XBRL fact `xbrl:0000105132:EBITDA:2026Q2`
+[7] XBRL fact `xbrl:0000105132:EBITDA:2026Q3`
+[8] XBRL fact `xbrl:0000105132:InterestExpense:2026Q3`
+[9] XBRL fact `xbrl:0000105132:CurrentAssets:2026Q3`
+[10] XBRL fact `xbrl:0000105132:CurrentLiabilities:2026Q3`
+[11] XBRL fact `xbrl:0000105132:Cash:2026Q3`
+[12] XBRL fact `xbrl:0000105132:OperatingCashFlow:FY2026`
+[13] XBRL fact `xbrl:0000105132:Capex:FY2026`
 
 ### WMT - Walmart Inc. (Consumer Discretionary)
 Score 1.00 | confidence medium | interpretation: stable
@@ -844,8 +914,6 @@ Score 1.00 | confidence medium | interpretation: stable
 - (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 5.29x (projection: flat FCF) [12][13][14][4]
 
 *Judgment: the cited filings show a stable credit profile with no multi-period deterioration.* (model judgment, not a filing fact)
-
-**Needs analyst review:** industry Industrial Specialties flagged industry-wide weakness via AIT
 
 [1] 10-Q filed 2026-11-06, Item 7 / MD&A (Liquidity) (`xpel-10-q-2026-11-06-item7`)
 [2] 10-Q filed 2026-11-06, Note: Credit facilities & covenants (`xpel-10-q-2026-11-06-note_credit`)
@@ -935,7 +1003,6 @@ Score 1.00 | confidence medium | interpretation: stable
 
 **Filing facts (verbatim)**
 - Our non-GAAP financial measures also exclude (where applicable) the impact of special items, which represent litigation judgments and settlements and/or certain one-time items, as well as the related tax impacts (“Special Items”). [1]
-- In the three months ended September 30, 2026, we recorded charges of $74 million ($49 million after tax, or $0.06 per diluted share), primarily due to settlements with merchants who opted out of the U.S. merchant class litigation. [1]
 
 **Computed ratios**
 - Total debt / LTM EBITDA = 1.06x [2][3][4][5][6]
@@ -943,7 +1010,7 @@ Score 1.00 | confidence medium | interpretation: stable
 - Current assets / current liabilities = 1.01 [8][9]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 8.42x (projection: flat FCF) [10][11][12][13][14][15][16]
 
-*Judgment: The passages frame the reported weakness as special litigation and fair-value items rather than an identified lasting operating deterioration, supporting the stable view.* (model judgment, not a filing fact)
+*Judgment: The passages show material litigation charges and net losses without stating that those items are reversing, so they do not support a stable credit view and the weakness described is company-specific.* (model judgment, not a filing fact)
 
 [1] 10-Q filed 2026-10-29, Item 7 / MD&A (Liquidity) (`ma-10-q-2026-10-29-item7`)
 [2] XBRL fact `xbrl:0001141391:TotalDebt:2026Q3`
@@ -963,7 +1030,7 @@ Score 1.00 | confidence medium | interpretation: stable
 [16] XBRL fact `xbrl:0001141391:DebtMaturity:2029`
 
 ### LEVI - LEVI STRAUSS & CO (Consumer Discretionary)
-Score 1.00 | confidence medium | interpretation: stable
+Score 1.00 | confidence medium | interpretation: setback | scope: company
 
 **Filing facts (verbatim)**
 - We also had cash and cash equivalents totaling approximately $641.4 million and short-term investments of $137.9 million resulting in a [1]
@@ -979,7 +1046,9 @@ Score 1.00 | confidence medium | interpretation: stable
 - Current assets / current liabilities = 1.63 [10][11]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 99.00x (projection: flat FCF) [12][13][14][15][16][17][18]
 
-*Judgment: The cited weakness is a one-time restructuring and settlement charge, while the company reports no revolver borrowings and substantial unused availability, supporting a stable credit view.* (model judgment, not a filing fact)
+*Judgment: The disclosed restructuring and settlement charges are described as one-time and company-specific, while liquidity remains strong.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-Q filed 2026-10-07, Item 7 / MD&A (Liquidity) (`levi-10-q-2026-10-07-item7`)
 [2] 10-Q filed 2026-10-07, Note: Credit facilities & covenants (`levi-10-q-2026-10-07-note_credit`)
@@ -1001,7 +1070,7 @@ Score 1.00 | confidence medium | interpretation: stable
 [18] XBRL fact `xbrl:0000094845:DebtMaturity:2029`
 
 ### VMI - VALMONT INDUSTRIES INC (Industrials)
-Score 1.00 | confidence medium | interpretation: setback | scope: unknown
+Score 1.00 | confidence medium | interpretation: setback | scope: company
 
 **Filing facts (verbatim)**
 - Less: Cash and cash equivalents in excess of $50,000 [1]
@@ -1015,7 +1084,7 @@ Score 1.00 | confidence medium | interpretation: setback | scope: unknown
 - Current assets / current liabilities = 2.41 [9][10]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 99.00x (projection: flat FCF) [11][12][13][14][15][16][17]
 
-*Judgment: The passages describe contingent risks and leverage rather than a one-time weakness expected to reverse, and they do not establish an industry-wide condition.* (model judgment, not a filing fact)
+*Judgment: The passages describe ongoing company-specific litigation, leverage, and inventory-reserve risks rather than a one-time weakness expected to reverse.* (model judgment, not a filing fact)
 
 **Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
@@ -1105,6 +1174,42 @@ Score 0.99 | confidence medium | interpretation: stable | maturity wall 2026
 [17] XBRL fact `xbrl:0000026324:DebtMaturity:2028`
 [18] XBRL fact `xbrl:0000026324:DebtMaturity:2029`
 
+### AMD - ADVANCED MICRO DEVICES INC (Technology)
+Score 0.99 | confidence medium | interpretation: setback | scope: unknown
+
+**Filing facts (verbatim)**
+- Subject to certain conditions, the Company may borrow, repay and reborrow under the Revolving Facility, with up to $250 million available for letters of credit, which reduces the aggregate amount otherwise available for revolving loans. [1]
+- Financial Instruments Measured at Fair Value on a Non-Recurring Basis [2]
+- Certain of the Company’s investments in privately held cloud and SI infrastructure companies are variable interests in variable interest entities (VIEs). [2]
+- An event of default may accelerate the maturity of any series. [3]
+- In August 2026, we issued $4.75 billion in aggregate principal amount of senior notes, with proceeds intended for general corporate purposes, including the repayment of debt. [4]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 0.88x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 45.68x [9][10]
+- Current assets / current liabilities = 2.72 [11][12]
+- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 3.90x (projection: flat FCF) [13][14][15][5]
+
+*Judgment: The passages disclose contingent risk factors rather than identifying a one-time weakness that is expected to reverse, so they do not support the setback hypothesis.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
+
+[1] 10-Q filed 2026-11-04, Note: Credit facilities & covenants (`amd-10-q-2026-11-04-note_credit`)
+[2] 10-Q filed 2026-11-04, Note: Derivatives & interest-rate exposure (`amd-10-q-2026-11-04-note_derivatives`)
+[3] 10-Q filed 2026-11-04, Debt & maturity footnote (`amd-10-q-2026-11-04-debt_footnote`)
+[4] 10-Q filed 2026-11-04, Item 7 / MD&A (Liquidity) (`amd-10-q-2026-11-04-item7`)
+[5] XBRL fact `xbrl:0000002488:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0000002488:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0000002488:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0000002488:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0000002488:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0000002488:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0000002488:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0000002488:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0000002488:Cash:2026Q3`
+[14] XBRL fact `xbrl:0000002488:OperatingCashFlow:FY2025`
+[15] XBRL fact `xbrl:0000002488:Capex:FY2025`
+
 ### AVGO - Broadcom Inc. (Technology)
 Score 0.99 | confidence medium | interpretation: stable | maturity wall 2028
 
@@ -1144,6 +1249,44 @@ Score 0.99 | confidence medium | interpretation: stable | maturity wall 2028
 [18] XBRL fact `xbrl:0001730168:DebtMaturity:2028`
 [19] XBRL fact `xbrl:0001730168:DebtMaturity:2029`
 
+### M - Macy's, Inc. (Consumer Discretionary)
+Score 0.99 | confidence medium | interpretation: stable
+
+**Filing facts (verbatim)**
+- The Company ended the second quarter of 2026 with a cash and cash equivalents balance of $1,294 million, an increase of $465 million from $829 million at the end of the second quarter of 2025. [1]
+- •On April 9, 2025 the Company, entered into an amendment to its Existing ABL Credit Facility which reduced the asset-based credit facility from $3,000 million to $2,100 million, extended the maturity date to April 2030 and maintained similar collateral support, but reduced commercial letter of credit fees and unused facility fees. [1]
+- •Founded over 150 years ago, Bloomingdale’s represents the Company's upscale, premium contemporary-to-luxury department store offering. [2]
+- The Company used the net proceeds from the notes offering, together with cash on hand, to fund the tender offer and redemption described below, [1]
+- Net sales for the second quarter of 2026 increased $54 million, or 1.1%, compared to the second quarter of 2025. [1]
+- Gross margin rate increased 180 basis points in the second quarter of 2026 compared to the second quarter of 2025 mainly driven by gross tariff refunds of approximately $95 million. [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 1.21x [3][4][5][6][7]
+- EBITDA / interest expense (quarter) = 20.45x [7][8]
+- Current assets / current liabilities = 1.59 [9][10]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 99.00x (projection: flat FCF) [11][12][13][14][15][16]
+
+*Judgment: The passages show sales growth and liquidity, while the margin benefit is a temporary tariff refund rather than a lasting deterioration.* (model judgment, not a filing fact)
+
+**Needs analyst review:** branches disagreed on interpretation; the conservative one was chosen
+
+[1] 10-Q filed 2026-09-10, Item 7 / MD&A (Liquidity) (`m-10-q-2026-09-10-item7`)
+[2] 10-K filed 2026-03-27, Item 1 (Business) (`m-10-k-2026-03-27-item1`)
+[3] XBRL fact `xbrl:0000794367:TotalDebt:2026Q3`
+[4] XBRL fact `xbrl:0000794367:EBITDA:2025Q4`
+[5] XBRL fact `xbrl:0000794367:EBITDA:2026Q1`
+[6] XBRL fact `xbrl:0000794367:EBITDA:2026Q2`
+[7] XBRL fact `xbrl:0000794367:EBITDA:2026Q3`
+[8] XBRL fact `xbrl:0000794367:InterestExpense:2026Q3`
+[9] XBRL fact `xbrl:0000794367:CurrentAssets:2026Q3`
+[10] XBRL fact `xbrl:0000794367:CurrentLiabilities:2026Q3`
+[11] XBRL fact `xbrl:0000794367:Cash:2026Q3`
+[12] XBRL fact `xbrl:0000794367:OperatingCashFlow:FY2026`
+[13] XBRL fact `xbrl:0000794367:Capex:FY2026`
+[14] XBRL fact `xbrl:0000794367:DebtMaturity:2027`
+[15] XBRL fact `xbrl:0000794367:DebtMaturity:2028`
+[16] XBRL fact `xbrl:0000794367:DebtMaturity:2029`
+
 ### CMI - CUMMINS INC (Industrials)
 Score 0.99 | confidence medium | interpretation: stable | maturity wall 2028
 
@@ -1178,6 +1321,78 @@ Score 0.99 | confidence medium | interpretation: stable | maturity wall 2028
 [15] XBRL fact `xbrl:0000026172:DebtMaturity:2027`
 [16] XBRL fact `xbrl:0000026172:DebtMaturity:2028`
 [17] XBRL fact `xbrl:0000026172:DebtMaturity:2029`
+
+### CXDO - Crexendo, Inc. (Communication Services)
+Score 0.99 | confidence medium | interpretation: stable
+
+**Filing facts (verbatim)**
+- As of September 30, 2026 and December 31, 2025, we had cash and cash equivalents of $22,841 and $31,378, respectively. [1]
+- The Term Loan is subject to compliance with the restrictive covenants as defined in the agreement. [2]
+- The ASU’s amendments are effective for annual periods beginning after December 15, 2024 on a prospective basis. [3]
+- Income Taxes–We recognize a liability or asset for the deferred tax consequences of all temporary differences between the tax basis of assets and liabilities and their reported amounts in the consolidated financial statements that will result in taxable or deductible amounts in future years when the reported amounts of the assets and liabilities are recovered or settled. [3]
+- In the ordinary course of business, the Company may be involved in a variety of claims, lawsuits, investigations, and other proceedings, including patent infringement claims, employment litigation, regulatory compliance matters, and contractual disputes, that can arise in the normal course of the Company's operations. [4]
+- As of September 30, 2026, we are not involved in any off-balance sheet arrangements, as defined in Item 303(a)(4)(ii) of SEC Regulation S-K. [1]
+- Cash provided by or used in financing activities is driven by the proceeds from the exercise of options, taxes paid on the net settlement of stock options and RSUs, payments of contingent consideration, proceeds from finance leases and notes payable, repayments made on finance leases and notes payable, proceeds and repayments on line of credit, and proceeds from the issuance of common stock in connection with an offering. [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 1.21x [5][6][7][8][9]
+- EBITDA / interest expense (quarter) = 13.98x [9][10]
+- Current assets / current liabilities = 2.18 [11][12]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 45.05x (projection: flat FCF) [13][14][15][16][17][18]
+
+*Judgment: The passages describe routine company-specific financing and low receivable credit risk, with no indication of a one-time setback or lasting deterioration.* (model judgment, not a filing fact)
+
+[1] 10-Q filed 2026-11-03, Item 7 / MD&A (Liquidity) (`cxdo-10-q-2026-11-03-item7`)
+[2] 10-Q filed 2026-11-03, Note: Credit facilities & covenants (`cxdo-10-q-2026-11-03-note_credit`)
+[3] 10-Q filed 2026-11-03, Note: Basis of presentation (going concern / restatement) (`cxdo-10-q-2026-11-03-note_basis`)
+[4] 10-Q filed 2026-11-03, Note: Commitments & contingencies (`cxdo-10-q-2026-11-03-note_commitments`)
+[5] XBRL fact `xbrl:0001075736:TotalDebt:2026Q3`
+[6] XBRL fact `xbrl:0001075736:EBITDA:2025Q4`
+[7] XBRL fact `xbrl:0001075736:EBITDA:2026Q1`
+[8] XBRL fact `xbrl:0001075736:EBITDA:2026Q2`
+[9] XBRL fact `xbrl:0001075736:EBITDA:2026Q3`
+[10] XBRL fact `xbrl:0001075736:InterestExpense:2026Q3`
+[11] XBRL fact `xbrl:0001075736:CurrentAssets:2026Q3`
+[12] XBRL fact `xbrl:0001075736:CurrentLiabilities:2026Q3`
+[13] XBRL fact `xbrl:0001075736:Cash:2026Q3`
+[14] XBRL fact `xbrl:0001075736:OperatingCashFlow:FY2025`
+[15] XBRL fact `xbrl:0001075736:Capex:FY2025`
+[16] XBRL fact `xbrl:0001075736:DebtMaturity:2027`
+[17] XBRL fact `xbrl:0001075736:DebtMaturity:2028`
+[18] XBRL fact `xbrl:0001075736:DebtMaturity:2029`
+
+### AZZ - AZZ INC (Industrials)
+Score 0.99 | confidence medium | interpretation: stable | maturity wall 2029
+
+**Filing facts (verbatim)**
+- As of August 31, 2026, our total liquidity of $376.4 million consisted of available capacity under our Revolving Credit Facility of $374.4 million and cash and cash equivalents of $2.0 million. [1]
+- ii.provides for a maximum senior secured Revolving Credit Facility in the aggregate principal amount of $400.0 million (the "Revolving Credit Facility"), due May 7, 2029 (following the amendment on May 7, 2026, as described below); [1]
+- Equity in earnings of unconsolidated subsidiary(3) [1]
+- •a decrease of $3.7 million in proceeds from the sale of property, plant and equipment, partially offset by [1]
+
+**Computed ratios**
+- Total debt / LTM EBITDA = 1.23x [2][3][4][5][6]
+- EBITDA / interest expense (quarter) = 9.99x [6][7]
+- Current assets / current liabilities = 1.79 [8][9]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 7.42x (projection: flat FCF) [10][11][12][13][14][15]
+
+*Judgment: the cited filings show a stable credit profile with no multi-period deterioration.* (model judgment, not a filing fact)
+
+[1] 10-Q filed 2026-10-13, Item 7 / MD&A (Liquidity) (`azz-10-q-2026-10-13-item7`)
+[2] XBRL fact `xbrl:0000008947:TotalDebt:2026Q3`
+[3] XBRL fact `xbrl:0000008947:EBITDA:2025Q4`
+[4] XBRL fact `xbrl:0000008947:EBITDA:2026Q1`
+[5] XBRL fact `xbrl:0000008947:EBITDA:2026Q2`
+[6] XBRL fact `xbrl:0000008947:EBITDA:2026Q3`
+[7] XBRL fact `xbrl:0000008947:InterestExpense:2026Q3`
+[8] XBRL fact `xbrl:0000008947:CurrentAssets:2026Q3`
+[9] XBRL fact `xbrl:0000008947:CurrentLiabilities:2026Q3`
+[10] XBRL fact `xbrl:0000008947:Cash:2026Q3`
+[11] XBRL fact `xbrl:0000008947:OperatingCashFlow:FY2026`
+[12] XBRL fact `xbrl:0000008947:Capex:FY2026`
+[13] XBRL fact `xbrl:0000008947:DebtMaturity:2027`
+[14] XBRL fact `xbrl:0000008947:DebtMaturity:2028`
+[15] XBRL fact `xbrl:0000008947:DebtMaturity:2029`
 
 ### LECO - LINCOLN ELECTRIC HOLDINGS INC (Industrials)
 Score 0.99 | confidence medium | interpretation: stable
@@ -1216,7 +1431,7 @@ Score 0.99 | confidence medium | interpretation: stable
 [18] XBRL fact `xbrl:0000059527:DebtMaturity:2029`
 
 ### DG - DOLLAR GENERAL CORP (Consumer Discretionary)
-Score 0.98 | confidence medium | interpretation: stable | maturity wall 2029
+Score 0.98 | confidence medium | interpretation: setback | scope: unknown | maturity wall 2029
 
 **Filing facts (verbatim)**
 - We lease additional temporary warehouse space as necessary to support our distribution needs. [1]
@@ -1228,7 +1443,9 @@ Score 0.98 | confidence medium | interpretation: stable | maturity wall 2029
 - Current assets / current liabilities = 1.21 [9][10]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 8.43x (projection: flat FCF) [11][12][13][14][15][16]
 
-*Judgment: The filing excerpts describe contingent risks rather than an actual recent weakening, so they are consistent with a stable credit view and do not establish company-specific or industry-wide deterioration.* (model judgment, not a filing fact)
+*Judgment: The passages present contingent risk factors and future possible impacts, not a discrete recent weakness expected to reverse.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-K filed 2026-03-20, Item 1 (Business) (`dg-10-k-2026-03-20-item1`)
 [2] 10-Q filed 2026-08-27, Item 7 / MD&A (Liquidity) (`dg-10-q-2026-08-27-item7`)
@@ -1301,7 +1518,7 @@ Score 0.98 | confidence medium | interpretation: setback | scope: company | matu
 - Current assets / current liabilities = 2.51 [10][11]
 - (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 31.28x (projection: flat FCF) [12][13][14][15][16][17][18]
 
-*Judgment: The cited medical device correction charge is a discrete company-specific cost expected to be incurred within the current year, supporting a temporary setback rather than lasting credit deterioration.* (model judgment, not a filing fact)
+*Judgment: The passages identify company-specific device-correction costs but do not say the weakness will reverse, so they do not support a setback characterization.* (model judgment, not a filing fact)
 
 **Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
@@ -1325,38 +1542,38 @@ Score 0.98 | confidence medium | interpretation: setback | scope: company | matu
 [18] XBRL fact `xbrl:0001145197:DebtMaturity:2029`
 
 ### QCOM - QUALCOMM INC/DE (Technology)
-Score 0.98 | confidence medium | interpretation: stable
+Score 0.98 | confidence medium | interpretation: setback | scope: company
 
 **Filing facts (verbatim)**
 - Cash and cash equivalents | 4,636 | 5,520 | (884) [1]
 - + $701 million increase driven by higher costs related to the development of connectivity and integrated circuit technologies (including investments in key growth and diversification opportunities such as our Data Center business), primarily driven by an increase in employee-related expenses and lower non-recurring engineering cost reimbursements for product-related development work [1]
 - This was partially offset by cash provided by operating activities and $497 million in net proceeds from commercial paper issuance. [1]
-- We operate in the highly cyclical semiconductor industry, which is subject to significant downturns. [2]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 1.42x [3][4][5][6][7]
-- EBITDA / interest expense (quarter) = 10.49x [7][8]
-- Current assets / current liabilities = 1.86 [9][10]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 10.33x (projection: flat FCF) [11][12][13][14][15][16]
+- Total debt / LTM EBITDA = 1.42x [2][3][4][5][6]
+- EBITDA / interest expense (quarter) = 10.49x [6][7]
+- Current assets / current liabilities = 1.86 [8][9]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 10.33x (projection: flat FCF) [10][11][12][13][14][15]
 
-*Judgment: The passages describe generic industry and company risk factors but do not report a current or one-time weakening, so they are consistent with a stable credit profile and do not identify a company-specific weakness.* (model judgment, not a filing fact)
+*Judgment: The passages describe continuing litigation and licensing risks with possible material adverse effects, not a one-time setback expected to reverse.* (model judgment, not a filing fact)
+
+**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
 [1] 10-K filed 2026-11-04, Item 7 / MD&A (Liquidity) (`qcom-10-k-2026-11-04-item7`)
-[2] 10-K filed 2026-11-04, Item 1A (Risk Factors) (`qcom-10-k-2026-11-04-item1a-p16`)
-[3] XBRL fact `xbrl:0000804328:TotalDebt:2026Q3`
-[4] XBRL fact `xbrl:0000804328:EBITDA:2025Q4`
-[5] XBRL fact `xbrl:0000804328:EBITDA:2026Q1`
-[6] XBRL fact `xbrl:0000804328:EBITDA:2026Q2`
-[7] XBRL fact `xbrl:0000804328:EBITDA:2026Q3`
-[8] XBRL fact `xbrl:0000804328:InterestExpense:2026Q3`
-[9] XBRL fact `xbrl:0000804328:CurrentAssets:2026Q3`
-[10] XBRL fact `xbrl:0000804328:CurrentLiabilities:2026Q3`
-[11] XBRL fact `xbrl:0000804328:Cash:2026Q3`
-[12] XBRL fact `xbrl:0000804328:OperatingCashFlow:FY2026`
-[13] XBRL fact `xbrl:0000804328:Capex:FY2026`
-[14] XBRL fact `xbrl:0000804328:DebtMaturity:2027`
-[15] XBRL fact `xbrl:0000804328:DebtMaturity:2028`
-[16] XBRL fact `xbrl:0000804328:DebtMaturity:2029`
+[2] XBRL fact `xbrl:0000804328:TotalDebt:2026Q3`
+[3] XBRL fact `xbrl:0000804328:EBITDA:2025Q4`
+[4] XBRL fact `xbrl:0000804328:EBITDA:2026Q1`
+[5] XBRL fact `xbrl:0000804328:EBITDA:2026Q2`
+[6] XBRL fact `xbrl:0000804328:EBITDA:2026Q3`
+[7] XBRL fact `xbrl:0000804328:InterestExpense:2026Q3`
+[8] XBRL fact `xbrl:0000804328:CurrentAssets:2026Q3`
+[9] XBRL fact `xbrl:0000804328:CurrentLiabilities:2026Q3`
+[10] XBRL fact `xbrl:0000804328:Cash:2026Q3`
+[11] XBRL fact `xbrl:0000804328:OperatingCashFlow:FY2026`
+[12] XBRL fact `xbrl:0000804328:Capex:FY2026`
+[13] XBRL fact `xbrl:0000804328:DebtMaturity:2027`
+[14] XBRL fact `xbrl:0000804328:DebtMaturity:2028`
+[15] XBRL fact `xbrl:0000804328:DebtMaturity:2029`
 
 ### CHWY - Chewy, Inc. (Consumer Discretionary)
 Score 0.97 | confidence medium | interpretation: setback | scope: unknown
@@ -1374,7 +1591,7 @@ Score 0.97 | confidence medium | interpretation: setback | scope: unknown
 - Current assets / current liabilities = 0.84 [9][10]
 - (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 3.88x (projection: flat FCF) [11][12][13][3]
 
-*Judgment: The filings cite only one-time benefits and generic macroeconomic uncertainty rather than a discrete company-specific weakness that has emerged and should reverse, so the setback thesis is not supported by the text.* (model judgment, not a filing fact)
+*Judgment: The passages mention one-time benefits rather than a one-time weakness, and they do not identify a company-specific deterioration that is expected to reverse.* (model judgment, not a filing fact)
 
 **Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
@@ -1391,44 +1608,6 @@ Score 0.97 | confidence medium | interpretation: setback | scope: unknown
 [11] XBRL fact `xbrl:0001766502:Cash:2026Q3`
 [12] XBRL fact `xbrl:0001766502:OperatingCashFlow:FY2026`
 [13] XBRL fact `xbrl:0001766502:Capex:FY2026`
-
-### ETON - Eton Pharmaceuticals, Inc. (Health Care)
-Score 0.97 | confidence medium | interpretation: setback | scope: unknown
-
-**Filing facts (verbatim)**
-- As of September 30, 2026, we had total assets of $157.3 million, cash and cash equivalents of $55.6 million and working capital of $42.7 million. [1]
-- A protocol for each clinical study and any subsequent protocol amendments must be submitted to the FDA as part of the IND process. [2]
-- As permitted under Delaware law and in accordance with the Company’s Amended and Restated Bylaws, the Company is required to indemnify its officers and directors for certain events or occurrences while the officer or director is [3]
-- Adjustments to our GAAP figures as well as EBITDA include non-recurring acquisition or divestiture-related costs and severance costs, as well as non-cash items such as stock-based compensation, inventory step-up expense, depreciation and amortization, changes in valuation allowances on deferred tax assets, and other non-cash adjustments. [1]
-- We do not have any off-balance sheet transactions. [1]
-- Subsequent Events [4]
-- The change was primarily due to $8,000 of principal debt payments, including a $5,000 prepayment, partially offset by increased proceeds of $5,429 from stock option exercises and proceeds of $270 from the employee stock purchase program. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 0.51x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 34.74x [9][10]
-- Current assets / current liabilities = 1.79 [11][12]
-- (Cash + 3 x max(FCF,0)) / TOTAL debt (no maturity schedule in XBRL: all debt counted as due) = 3.74x (projection: flat FCF) [13][14][15][5]
-
-*Judgment: The passages describe generic regulatory and manufacturing risks without identifying a recent one-time weakness or expectation of reversal.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`eton-10-q-2026-11-05-item7`)
-[2] 10-K filed 2026-03-19, Item 1 (Business) (`eton-10-k-2026-03-19-item1`)
-[3] 10-Q filed 2026-11-05, Note: Commitments & contingencies (`eton-10-q-2026-11-05-note_commitments`)
-[4] 10-Q filed 2026-11-05, Note: Subsequent events (`eton-10-q-2026-11-05-note_subsequent`)
-[5] XBRL fact `xbrl:0001710340:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0001710340:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0001710340:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0001710340:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0001710340:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0001710340:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0001710340:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0001710340:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0001710340:Cash:2026Q3`
-[14] XBRL fact `xbrl:0001710340:OperatingCashFlow:FY2025`
-[15] XBRL fact `xbrl:0001710340:Capex:FY2025`
 
 ### HWM - Howmet Aerospace Inc. (Materials)
 Score 0.97 | confidence medium | interpretation: stable | maturity wall 2029
@@ -1493,93 +1672,44 @@ Score 0.97 | confidence medium | interpretation: stable | maturity wall 2029
 [14] XBRL fact `xbrl:0000737758:DebtMaturity:2028`
 [15] XBRL fact `xbrl:0000737758:DebtMaturity:2029`
 
-### ADSK - Autodesk, Inc. (Technology)
-Score 0.97 | confidence medium | interpretation: setback | scope: company | maturity wall 2027
-
-**Filing facts (verbatim)**
-- Our cash and cash equivalents are held by diversified financial institutions globally. [1]
-- The 2025 Credit Agreement requires Autodesk to maintain a maximum leverage ratio of Consolidated Covenant Debt to Consolidated EBITDA (each as defined in the 2025 Credit Agreement) no greater than 3.50:1.00 during the term of the credit facility, subject to adjustment following the consummation of certain acquisitions up to 4.00:1.00 for up to four consecutive fiscal quarters. [2]
-- Our Annual Report on Form 10-K, Quarterly Reports on Form 10-Q, Current Reports on Form 8-K, and amendments to reports filed or furnished pursuant to Sections 13(a) and 15(d) of the Securities Exchange Act of 1934, as amended, are available free of charge on the Investor Relations portion of our website at www.autodesk.com as soon as reasonably practicable after we electronically file such material with, or furnish it to, the SEC. [3]
-- In management’s opinion, Autodesk made all adjustments (consisting of normal, recurring and non-recurring adjustments) during the quarter that were considered necessary for the fair statement of the financial position and operating results of the Company. [4]
-- On April 24, 2024, Michael Barkasi filed a purported federal securities class action complaint in the Northern District of California against the Company, our Chief Executive Officer, Andrew Anagnost, and our former Chief Financial Officer, Deborah L. [5]
-- Subsequent Events [6]
-- The proceeds from the 2025 Credit Agreement are available for working capital and general corporate purposes. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 1.56x [7][8][9][10][11]
-- EBITDA / interest expense (quarter) = 99.00x [11][12]
-- Current assets / current liabilities = 0.86 [13][14]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 11.32x (projection: flat FCF) [15][16][17][18][19][20]
-
-*Judgment: The passages describe a company-specific acquisition and financing, but they do not state that any resulting credit weakness is temporary or expected to reverse.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-Q filed 2026-08-28, Item 7 / MD&A (Liquidity) (`adsk-10-q-2026-08-28-item7`)
-[2] 10-Q filed 2026-08-28, Note: Credit facilities & covenants (`adsk-10-q-2026-08-28-note_credit`)
-[3] 10-K filed 2026-03-03, Item 1 (Business) (`adsk-10-k-2026-03-03-item1`)
-[4] 10-Q filed 2026-08-28, Note: Basis of presentation (going concern / restatement) (`adsk-10-q-2026-08-28-note_basis`)
-[5] 10-Q filed 2026-08-28, Note: Commitments & contingencies (`adsk-10-q-2026-08-28-note_commitments`)
-[6] 10-Q filed 2026-08-28, Note: Subsequent events (`adsk-10-q-2026-08-28-note_subsequent`)
-[7] XBRL fact `xbrl:0000769397:TotalDebt:2026Q3`
-[8] XBRL fact `xbrl:0000769397:EBITDA:2025Q4`
-[9] XBRL fact `xbrl:0000769397:EBITDA:2026Q1`
-[10] XBRL fact `xbrl:0000769397:EBITDA:2026Q2`
-[11] XBRL fact `xbrl:0000769397:EBITDA:2026Q3`
-[12] XBRL fact `xbrl:0000769397:InterestExpense:2026Q3`
-[13] XBRL fact `xbrl:0000769397:CurrentAssets:2026Q3`
-[14] XBRL fact `xbrl:0000769397:CurrentLiabilities:2026Q3`
-[15] XBRL fact `xbrl:0000769397:Cash:2026Q3`
-[16] XBRL fact `xbrl:0000769397:OperatingCashFlow:FY2026`
-[17] XBRL fact `xbrl:0000769397:Capex:FY2026`
-[18] XBRL fact `xbrl:0000769397:DebtMaturity:2027`
-[19] XBRL fact `xbrl:0000769397:DebtMaturity:2028`
-[20] XBRL fact `xbrl:0000769397:DebtMaturity:2029`
-
-### THO - THOR INDUSTRIES INC (Consumer Discretionary)
+### BROS - Dutch Bros Inc. (Consumer Discretionary)
 Score 0.97 | confidence medium | interpretation: setback | scope: unknown
 
 **Filing facts (verbatim)**
-- As of July 31, 2026, we had $481,988 in cash and cash equivalents, of which $218,099 is held in the United States and the equivalent of $263,889, predominantly in Euros, is held in Europe, compared to $586,596 on July 31, 2025, of which $412,088 was held in the United States and the equivalent of $174,508, predominantly in Euros, was held in Europe. [1]
-- The covenants and other provisions of the Credit Agreement remained unchanged. [2]
-- Since originally entering these loans, the Company has entered into various amendments to extend maturities, lower interest rates and make other minor modifications. [3]
-- In Europe, short-term capacity decreases can generally be achieved by adjusting work schedules and reducing the number of short-term contract and temporary workers. [4]
-- Historically, chassis manufacturers resort to an industry-wide allocation system during periods when chassis supply is restricted. [4]
-- We have no other material off-balance sheet commitments. [1]
-- These arrangements, which are customary in the RV industry, provide for the repurchase of products sold to dealers in the event of default by the dealer on their agreement to pay the financial institution. [5]
-- SUBSEQUENT EVENT [6]
-- Net cash used in investing activities for fiscal 2026 was $125,443, primarily due to capital expenditures of $152,387 partially offset by proceeds from the dispositions of property, plant and equipment of $67,875 as well as $31,376 used for certain additional Corporate investments. [1]
+- We had cash and cash equivalents of $194.6 million and $269.4 million as of September 30, 2026 and December 31, 2025, respectively. [1]
+- We are required to pay a commitment fee on a quarterly basis, at a per annum rate of between 0.20% and 0.45%, depending on the Net Lease-Adjusted Total Leverage Ratio (as defined in the 2025 Credit Facility), based on the average daily unused portion of the revolving credit facility. [2]
+- The amendment had no material impact on the facility's borrowing terms. [1]
+- Costs incurred as a result of refinancing our credit facility in May 2025, including write-off of unamortized loan costs related to the amendment and restatement of our 2022 Credit Facility, and intermediary fees and other costs related to our 2025 Credit Facility. [1]
+- The decrease in other expense was primarily driven by an increase in other income (expense), net due to non-recurring expenses in the prior year related to our May 2025 credit facility refinancing. [1]
+- This is a standard metric used across our industry by investors. [1]
+- The decrease in net cash used in financing activities was primarily driven by the non-recurring net payoff of our 2022 Credit Facility in 2025, partially offset by proceeds from our 2025 Credit Facility. [1]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 1.58x [7][8][9][10][11]
-- EBITDA / interest expense (quarter) = 12.19x [11][12]
-- Current assets / current liabilities = 1.77 [13][14]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 69.69x (projection: flat FCF) [15][16][17][18][19][20]
+- Total debt / LTM EBITDA = 0.59x [3][4][5][6][7]
+- EBITDA / interest expense (quarter) = 10.31x [7][8]
+- Current assets / current liabilities = 1.03 [9][10]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 14.65x (projection: flat FCF) [11][12][13][14][15][16]
 
-*Judgment: The passages mention industry cyclicality and a prior financing charge but do not identify a latest weakness that is one-time and expected to reverse.* (model judgment, not a filing fact)
+*Judgment: The passages describe cost-pressure risk and financing details but do not identify a one-time weakness expected to reverse.* (model judgment, not a filing fact)
 
 **Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
 
-[1] 10-K filed 2026-09-22, Item 7 / MD&A (Liquidity) (`tho-10-k-2026-09-22-item7`)
-[2] 10-K filed 2026-09-22, Note: Credit facilities & covenants (`tho-10-k-2026-09-22-note_credit`)
-[3] 10-K filed 2026-09-22, Debt & maturity footnote (`tho-10-k-2026-09-22-debt_footnote`)
-[4] 10-K filed 2026-09-22, Item 1 (Business) (`tho-10-k-2026-09-22-item1`)
-[5] 10-K filed 2026-09-22, Note: Commitments & contingencies (`tho-10-k-2026-09-22-note_commitments`)
-[6] 10-K filed 2026-09-22, Note: Subsequent events (`tho-10-k-2026-09-22-note_subsequent`)
-[7] XBRL fact `xbrl:0000730263:TotalDebt:2026Q3`
-[8] XBRL fact `xbrl:0000730263:EBITDA:2025Q4`
-[9] XBRL fact `xbrl:0000730263:EBITDA:2026Q1`
-[10] XBRL fact `xbrl:0000730263:EBITDA:2026Q2`
-[11] XBRL fact `xbrl:0000730263:EBITDA:2026Q3`
-[12] XBRL fact `xbrl:0000730263:InterestExpense:2026Q3`
-[13] XBRL fact `xbrl:0000730263:CurrentAssets:2026Q3`
-[14] XBRL fact `xbrl:0000730263:CurrentLiabilities:2026Q3`
-[15] XBRL fact `xbrl:0000730263:Cash:2026Q3`
-[16] XBRL fact `xbrl:0000730263:OperatingCashFlow:FY2026`
-[17] XBRL fact `xbrl:0000730263:Capex:FY2026`
-[18] XBRL fact `xbrl:0000730263:DebtMaturity:2027`
-[19] XBRL fact `xbrl:0000730263:DebtMaturity:2028`
-[20] XBRL fact `xbrl:0000730263:DebtMaturity:2029`
+[1] 10-Q filed 2026-11-05, Item 7 / MD&A (Liquidity) (`bros-10-q-2026-11-05-item7`)
+[2] 10-Q filed 2026-11-05, Note: Credit facilities & covenants (`bros-10-q-2026-11-05-note_credit`)
+[3] XBRL fact `xbrl:0001866581:TotalDebt:2026Q3`
+[4] XBRL fact `xbrl:0001866581:EBITDA:2025Q4`
+[5] XBRL fact `xbrl:0001866581:EBITDA:2026Q1`
+[6] XBRL fact `xbrl:0001866581:EBITDA:2026Q2`
+[7] XBRL fact `xbrl:0001866581:EBITDA:2026Q3`
+[8] XBRL fact `xbrl:0001866581:InterestExpense:2026Q3`
+[9] XBRL fact `xbrl:0001866581:CurrentAssets:2026Q3`
+[10] XBRL fact `xbrl:0001866581:CurrentLiabilities:2026Q3`
+[11] XBRL fact `xbrl:0001866581:Cash:2026Q3`
+[12] XBRL fact `xbrl:0001866581:OperatingCashFlow:FY2025`
+[13] XBRL fact `xbrl:0001866581:Capex:FY2025`
+[14] XBRL fact `xbrl:0001866581:DebtMaturity:2027`
+[15] XBRL fact `xbrl:0001866581:DebtMaturity:2028`
+[16] XBRL fact `xbrl:0001866581:DebtMaturity:2029`
 
 ### MOD - MODEXUS SOLUTIONS, INC. (Industrials)
 Score 0.97 | confidence medium | interpretation: stable
@@ -1617,39 +1747,6 @@ Score 0.97 | confidence medium | interpretation: stable
 [16] XBRL fact `xbrl:0000067347:DebtMaturity:2028`
 [17] XBRL fact `xbrl:0000067347:DebtMaturity:2029`
 
-### VSXY - Victoria's Secret & Co. (Consumer Discretionary)
-Score 0.97 | confidence medium | interpretation: stable | maturity wall 2029
-
-**Filing facts (verbatim)**
-- Cash and Cash Equivalents, Beginning of Period | 518 | 227 [1]
-- These arrangements can typically be terminated by us, upon delivery of notice, in the event of any breach of representations or warranties. [2]
-- In addition to our results provided in accordance with GAAP above and throughout this Quarterly Report on Form 10-Q, provided below are non-GAAP financial measures that present operating income, net income attributable to Victoria’s Secret & Co. and net income per diluted share attributable to Victoria’s Secret & Co. on an adjusted basis, which remove certain non-recurring, infrequent or unusual items that we believe are not indicative of the results of our ongoing operations due to their size and nature. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 1.28x [3][4][5][6][7]
-- EBITDA / interest expense (quarter) = 20.53x [7][8]
-- Current assets / current liabilities = 1.36 [9][10]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 3.81x (projection: flat FCF) [11][12][13][14][15][16]
-
-*Judgment: The passages are generic forward-looking risk factors and do not report a current one-time or lasting weakening, so they do not affirm stability and the potential weakness cannot be attributed solely to the company or its industry.* (model judgment, not a filing fact)
-
-[1] 10-Q filed 2026-09-04, Item 7 / MD&A (Liquidity) (`vsxy-10-q-2026-09-04-item7`)
-[2] 10-K filed 2026-03-20, Item 1 (Business) (`vsxy-10-k-2026-03-20-item1`)
-[3] XBRL fact `xbrl:0001856437:TotalDebt:2026Q3`
-[4] XBRL fact `xbrl:0001856437:EBITDA:2025Q4`
-[5] XBRL fact `xbrl:0001856437:EBITDA:2026Q1`
-[6] XBRL fact `xbrl:0001856437:EBITDA:2026Q2`
-[7] XBRL fact `xbrl:0001856437:EBITDA:2026Q3`
-[8] XBRL fact `xbrl:0001856437:InterestExpense:2026Q3`
-[9] XBRL fact `xbrl:0001856437:CurrentAssets:2026Q3`
-[10] XBRL fact `xbrl:0001856437:CurrentLiabilities:2026Q3`
-[11] XBRL fact `xbrl:0001856437:Cash:2026Q3`
-[12] XBRL fact `xbrl:0001856437:OperatingCashFlow:FY2026`
-[13] XBRL fact `xbrl:0001856437:Capex:FY2026`
-[14] XBRL fact `xbrl:0001856437:DebtMaturity:2027`
-[15] XBRL fact `xbrl:0001856437:DebtMaturity:2028`
-[16] XBRL fact `xbrl:0001856437:DebtMaturity:2029`
-
 ### CHSCP - CHS INC (Industrials)
 Score 0.97 | confidence medium | interpretation: stable
 
@@ -1683,44 +1780,6 @@ Score 0.97 | confidence medium | interpretation: stable
 [14] XBRL fact `xbrl:0000823277:DebtMaturity:2027`
 [15] XBRL fact `xbrl:0000823277:DebtMaturity:2028`
 [16] XBRL fact `xbrl:0000823277:DebtMaturity:2029`
-
-### ZETA - Zeta Global Holdings Corp. (Technology)
-Score 0.96 | confidence medium | interpretation: stable | maturity wall 2029
-
-**Filing facts (verbatim)**
-- As of September 30, 2026, we had cash and cash equivalents of $340.1 million and net working capital, consisting of current assets less current liabilities of $432.7 million. [1]
-- Out of the total 2026 Senior Secured Credit Facility, $750,000 remains undrawn as of September 30, 2026. [2]
-- The amendment in ASU 2025-05 is effective for fiscal years beginning after December 15, 2025, and interim periods within those fiscal years, with early adoption permitted. [3]
-- Under this method, deferred tax assets and liabilities are determined based on temporary differences between the financial statement and tax basis of assets and liabilities using enacted tax rates in effect for the year in which the differences are expected to reverse. [1]
-- Subsequent Events [4]
-- During the nine months ended September 30, 2026, we used $39.8 million of cash for financing activities, primarily due to the repurchase of $85.5 million of shares of our common stock repurchased under the 2025 SRP (as defined below), including the RSA Withholding Program (as defined below), and payment of acquisition-related liabilities of $8.4 million, partially offset by net proceeds from the credit facility refinancing of $45.8 million, and receipts from the ESPP and exercise of options of $8.3 million. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 1.64x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 73.80x [9][10]
-- Current assets / current liabilities = 2.30 [11][12]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 26.05x (projection: flat FCF) [13][14][15][16][17][18]
-
-*Judgment: The passages show growing revenue per customer, positive operating cash flow, ample cash and working capital, and substantial undrawn revolver capacity, with no evidence of a lasting credit weakening.* (model judgment, not a filing fact)
-
-[1] 10-Q filed 2026-11-09, Item 7 / MD&A (Liquidity) (`zeta-10-q-2026-11-09-item7`)
-[2] 10-Q filed 2026-11-09, Note: Credit facilities & covenants (`zeta-10-q-2026-11-09-note_credit`)
-[3] 10-Q filed 2026-11-09, Note: Basis of presentation (going concern / restatement) (`zeta-10-q-2026-11-09-note_basis`)
-[4] 10-Q filed 2026-11-09, Note: Subsequent events (`zeta-10-q-2026-11-09-note_subsequent`)
-[5] XBRL fact `xbrl:0001851003:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0001851003:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0001851003:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0001851003:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0001851003:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0001851003:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0001851003:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0001851003:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0001851003:Cash:2026Q3`
-[14] XBRL fact `xbrl:0001851003:OperatingCashFlow:FY2025`
-[15] XBRL fact `xbrl:0001851003:Capex:FY2025`
-[16] XBRL fact `xbrl:0001851003:DebtMaturity:2027`
-[17] XBRL fact `xbrl:0001851003:DebtMaturity:2028`
-[18] XBRL fact `xbrl:0001851003:DebtMaturity:2029`
 
 ### LTH - Life Time Group Holdings, Inc. (Consumer Discretionary)
 Score 0.96 | confidence medium | interpretation: stable
@@ -1760,119 +1819,45 @@ Score 0.96 | confidence medium | interpretation: stable
 [18] XBRL fact `xbrl:0001869198:DebtMaturity:2028`
 [19] XBRL fact `xbrl:0001869198:DebtMaturity:2029`
 
-### PG - PROCTER & GAMBLE Co (Materials)
+### MGNI - MAGNITE, INC. (Technology)
 Score 0.96 | confidence medium | interpretation: stable | maturity wall 2027
 
 **Filing facts (verbatim)**
-- The Company's Annual Report on Form 10-K, quarterly reports on Form 10-Q and current reports on Form 8-K, and amendments thereto, are filed electronically with the SEC. [1]
-- Organic volume growth reflects year-over-year changes in unit volume excluding the impacts of acquisitions and divestitures and certain one-time items, if applicable, and is used to explain changes in organic sales. [2]
-- The restructuring activities are being executed across the Sector Business Units as well as the Enterprise Markets, Corporate Functions and Global Business Services. [2]
-- While considerable uncertainty exists, in the opinion of management and our counsel, the ultimate resolution of the various lawsuits and claims will not materially affect our financial position, results of operations or cash flows. [3]
-- Subsequent Event [4]
+- As of September 30, 2026, we had cash and cash equivalents of $392.9 million, of which $78.1 million was held in foreign currency denominated cash and cash equivalents accounts, and an aggregate gross principal amount of $357.7 million of indebtedness outstanding under our 2024 Term Loan B Facility (as defined below). [1]
+- The covenants of the 2024 Credit Agreement include customary negative covenants that, among other things, restrict the Company’s ability to incur additional indebtedness, grant liens and make certain acquisitions, investments, asset dispositions and restricted payments. [2]
+- On September 18, 2024, we entered into Amendment No. 1 to the 2024 Credit Agreement ("Amendment No. 1"), which reduced the interest rate of the 2024 Term Loan B Facility by 75 basis points to Term SOFR plus a margin of 3.75% from the previous rate of Term SOFR plus a margin of 4.50%, and on March 18, 2025, we entered into Amendment No. 2 to the 2024 Credit Agreement ("Amendment No. 2"), which reduced the interest rate of the 2024 Term Loan B Facility by an additional 75 basis points to Term SOFR plus a margin of 3.00%. [1]
+- The Company and its subsidiaries may from time to time be parties to legal or regulatory proceedings, lawsuits and other claims incident to their business activities and to the Company’s status as a public company. [3]
+- The 2024 Credit Agreement includes customary events of default, and customary rights and remedies upon the occurrence of any event of default thereunder, including rights to accelerate the loans, terminate the commitments thereunder and realize upon the collateral securing the obligations under the 2024 Credit Agreement. [4]
+- Subsequent Events [5]
+- In March 2021, we sold convertible senior notes ("Convertible Senior Notes") for gross proceeds of $400.0 million. [1]
 
 **Computed ratios**
-- Total debt / LTM EBITDA = 1.69x [5][6][7][8][9]
-- EBITDA / interest expense (quarter) = 30.26x [9][10]
-- Current assets / current liabilities = 0.72 [11][12]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 5.75x (projection: flat FCF) [13][14][15][16][17][18]
+- Total debt / LTM EBITDA = 1.81x [6][7][8][9][10]
+- EBITDA / interest expense (quarter) = 13.38x [10][11]
+- Current assets / current liabilities = 1.04 [12][13]
+- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 81.66x (projection: flat FCF) [14][15][16][17][18][19]
 
-*Judgment: The passages show sales, earnings, and operating cash flow growth alongside a disclosed restructuring charge and acquisition, with no indication of lasting credit deterioration.* (model judgment, not a filing fact)
+*Judgment: the cited filings show a stable credit profile with no multi-period deterioration.* (model judgment, not a filing fact)
 
-[1] 10-K filed 2026-08-04, Item 1 (Business) (`pg-10-k-2026-08-04-item1`)
-[2] 10-Q filed 2026-10-22, Item 7 / MD&A (Liquidity) (`pg-10-q-2026-10-22-item7`)
-[3] 10-Q filed 2026-10-22, Note: Commitments & contingencies (`pg-10-q-2026-10-22-note_commitments`)
-[4] 10-Q filed 2026-10-22, Note: Subsequent events (`pg-10-q-2026-10-22-note_subsequent`)
-[5] XBRL fact `xbrl:0000080424:TotalDebt:2026Q3`
-[6] XBRL fact `xbrl:0000080424:EBITDA:2025Q4`
-[7] XBRL fact `xbrl:0000080424:EBITDA:2026Q1`
-[8] XBRL fact `xbrl:0000080424:EBITDA:2026Q2`
-[9] XBRL fact `xbrl:0000080424:EBITDA:2026Q3`
-[10] XBRL fact `xbrl:0000080424:InterestExpense:2026Q3`
-[11] XBRL fact `xbrl:0000080424:CurrentAssets:2026Q3`
-[12] XBRL fact `xbrl:0000080424:CurrentLiabilities:2026Q3`
-[13] XBRL fact `xbrl:0000080424:Cash:2026Q3`
-[14] XBRL fact `xbrl:0000080424:OperatingCashFlow:FY2026`
-[15] XBRL fact `xbrl:0000080424:Capex:FY2026`
-[16] XBRL fact `xbrl:0000080424:DebtMaturity:2027`
-[17] XBRL fact `xbrl:0000080424:DebtMaturity:2028`
-[18] XBRL fact `xbrl:0000080424:DebtMaturity:2029`
-
-### JCI - Johnson Controls International plc (Industrials)
-Score 0.94 | confidence medium | interpretation: setback | scope: company
-
-**Filing facts (verbatim)**
-- The decrease in working capital at September 30, 2026 as compared to September 30, 2025 was primarily due to increases in deferred revenue, accounts payable and the current portion of long-term debt, partially offset by increases in accounts receivable and cash and cash equivalents. [1]
-- As of September 30, 2026, the Company was in compliance with all financial covenants set forth in its credit agreements and the indentures governing its outstanding notes, and expects to remain in compliance for the foreseeable future. [2]
-- It is expected that the plan will be completed by the end of fiscal 2028 and the Company will incur one-time restructuring costs, including severance and other employee termination benefits, contract termination costs, and certain other related cash and non-cash charges, totaling approximately $750 million (with approximately $400 million expected to be incurred in fiscal 2027 and 2028), resulting in expected annual cost savings of approximately $1.1 billion upon full completion of the plan. [1]
-- These lawsuits have been transferred to the MDL. [3]
-- •The increase in cash used by investing activities was primarily due to the acquisitions of Alloy Enterprises and Nantum AI, net investment activity and higher capital expenditures, partially offset by proceeds from the ADT Mexico and ADT Spain divestitures. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 2.00x [4][5][6][7][8]
-- EBITDA / interest expense (quarter) = 20.40x [8][9]
-- Current assets / current liabilities = 0.90 [10][11]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 4.43x (projection: flat FCF) [12][13][14][15][16][17]
-
-*Judgment: The only weakness shown is a company-specific restructuring charge explicitly labeled one-time and expected to yield recurring savings, with ample revolver capacity and modest leverage, so the pressure reads as a temporary setback rather than lasting deterioration.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-K filed 2026-11-12, Item 7 / MD&A (Liquidity) (`jci-10-k-2026-11-12-item7`)
-[2] 10-K filed 2026-11-12, Note: Credit facilities & covenants (`jci-10-k-2026-11-12-note_credit`)
-[3] 10-K filed 2026-11-12, Note: Commitments & contingencies (`jci-10-k-2026-11-12-note_commitments`)
-[4] XBRL fact `xbrl:0000833444:TotalDebt:2026Q3`
-[5] XBRL fact `xbrl:0000833444:EBITDA:2025Q4`
-[6] XBRL fact `xbrl:0000833444:EBITDA:2026Q1`
-[7] XBRL fact `xbrl:0000833444:EBITDA:2026Q2`
-[8] XBRL fact `xbrl:0000833444:EBITDA:2026Q3`
-[9] XBRL fact `xbrl:0000833444:InterestExpense:2026Q3`
-[10] XBRL fact `xbrl:0000833444:CurrentAssets:2026Q3`
-[11] XBRL fact `xbrl:0000833444:CurrentLiabilities:2026Q3`
-[12] XBRL fact `xbrl:0000833444:Cash:2026Q3`
-[13] XBRL fact `xbrl:0000833444:OperatingCashFlow:FY2026`
-[14] XBRL fact `xbrl:0000833444:Capex:FY2026`
-[15] XBRL fact `xbrl:0000833444:DebtMaturity:2027`
-[16] XBRL fact `xbrl:0000833444:DebtMaturity:2028`
-[17] XBRL fact `xbrl:0000833444:DebtMaturity:2029`
-
-### UBER - Uber Technologies, Inc (Industrials)
-Score 0.94 | confidence medium | interpretation: setback | scope: unknown | maturity wall 2028
-
-**Filing facts (verbatim)**
-- As of September 30, 2026, $4.0 billion of our $9.6 billion in cash and cash equivalents was held by our foreign subsidiaries. [1]
-- The Credit Agreement contains customary covenants restricting our and certain of our subsidiaries' ability to incur liens, certain of our subsidiaries' ability to incur debt, and our ability to undergo certain fundamental changes, as well as a financial covenant. [2]
-- Assets Measured at Fair Value on a Non-Recurring Basis [3]
-- We are involved in numerous legal proceedings globally, including putative class and collective class action lawsuits, demands for arbitration, charges and claims before administrative agencies, and investigations or audits by labor, social security, and tax authorities that claim that Drivers should be treated as our employees (or as workers or quasi-employees where those statuses exist), rather than as independent contractors. [1]
-- Net cash used in investing activities was $6.1 billion for the nine months ended September 30, 2026, primarily consisting of: purchases of marketable securities of $26.1 billion, purchase of total return swaps of $1.6 billion, acquisition of businesses, net of cash acquired of $1.6 billion, purchases of non-marketable equity securities of $805 million, purchases of loan and notes receivable of $327 million, and purchase of property and equipment of $239 million; partially offset by proceeds from maturities and sales of marketable securities of $24.5 billion. [1]
-
-**Computed ratios**
-- Total debt / LTM EBITDA = 2.01x [4][5][6][7][8]
-- EBITDA / interest expense (quarter) = 10.91x [8][9]
-- Current assets / current liabilities = 1.23 [10][11]
-- (Cash + 3 x max(FCF,0)) / debt maturing 2026-2029 = 8.93x (projection: flat FCF) [12][13][14][15][16][17][18]
-
-*Judgment: The passages show revenue and booking growth plus available liquidity, but they contain no statement of a recent one-time weakness or an expected reversal, so the setback hypothesis is unsupported and no weakness scope is identified.* (model judgment, not a filing fact)
-
-**Needs analyst review:** one-time setback accepted on cited evidence: confirm the recovery plan
-
-[1] 10-Q filed 2026-11-04, Item 7 / MD&A (Liquidity) (`uber-10-q-2026-11-04-item7`)
-[2] 10-Q filed 2026-11-04, Note: Credit facilities & covenants (`uber-10-q-2026-11-04-note_credit`)
-[3] 10-Q filed 2026-11-04, Note: Derivatives & interest-rate exposure (`uber-10-q-2026-11-04-note_derivatives`)
-[4] XBRL fact `xbrl:0001543151:TotalDebt:2026Q3`
-[5] XBRL fact `xbrl:0001543151:EBITDA:2025Q4`
-[6] XBRL fact `xbrl:0001543151:EBITDA:2026Q1`
-[7] XBRL fact `xbrl:0001543151:EBITDA:2026Q2`
-[8] XBRL fact `xbrl:0001543151:EBITDA:2026Q3`
-[9] XBRL fact `xbrl:0001543151:InterestExpense:2026Q3`
-[10] XBRL fact `xbrl:0001543151:CurrentAssets:2026Q3`
-[11] XBRL fact `xbrl:0001543151:CurrentLiabilities:2026Q3`
-[12] XBRL fact `xbrl:0001543151:Cash:2026Q3`
-[13] XBRL fact `xbrl:0001543151:OperatingCashFlow:FY2025`
-[14] XBRL fact `xbrl:0001543151:Capex:FY2025`
-[15] XBRL fact `xbrl:0001543151:DebtMaturity:2026`
-[16] XBRL fact `xbrl:0001543151:DebtMaturity:2027`
-[17] XBRL fact `xbrl:0001543151:DebtMaturity:2028`
-[18] XBRL fact `xbrl:0001543151:DebtMaturity:2029`
+[1] 10-Q filed 2026-11-04, Item 7 / MD&A (Liquidity) (`mgni-10-q-2026-11-04-item7`)
+[2] 10-Q filed 2026-11-04, Note: Credit facilities & covenants (`mgni-10-q-2026-11-04-note_credit`)
+[3] 10-Q filed 2026-11-04, Note: Commitments & contingencies (`mgni-10-q-2026-11-04-note_commitments`)
+[4] 10-Q filed 2026-11-04, Debt & maturity footnote (`mgni-10-q-2026-11-04-debt_footnote`)
+[5] 10-Q filed 2026-11-04, Note: Subsequent events (`mgni-10-q-2026-11-04-note_subsequent`)
+[6] XBRL fact `xbrl:0001595974:TotalDebt:2026Q3`
+[7] XBRL fact `xbrl:0001595974:EBITDA:2025Q4`
+[8] XBRL fact `xbrl:0001595974:EBITDA:2026Q1`
+[9] XBRL fact `xbrl:0001595974:EBITDA:2026Q2`
+[10] XBRL fact `xbrl:0001595974:EBITDA:2026Q3`
+[11] XBRL fact `xbrl:0001595974:InterestExpense:2026Q3`
+[12] XBRL fact `xbrl:0001595974:CurrentAssets:2026Q3`
+[13] XBRL fact `xbrl:0001595974:CurrentLiabilities:2026Q3`
+[14] XBRL fact `xbrl:0001595974:Cash:2026Q3`
+[15] XBRL fact `xbrl:0001595974:OperatingCashFlow:FY2025`
+[16] XBRL fact `xbrl:0001595974:Capex:FY2025`
+[17] XBRL fact `xbrl:0001595974:DebtMaturity:2027`
+[18] XBRL fact `xbrl:0001595974:DebtMaturity:2028`
+[19] XBRL fact `xbrl:0001595974:DebtMaturity:2029`
 
 ## Not selected
 
@@ -1880,71 +1865,68 @@ Score 0.94 | confidence medium | interpretation: setback | scope: unknown | matu
 - **ABNB** [include]: Composite 0.90; interpretation: deterioration
 - **ACMR** [include]: Composite 0.85; interpretation: deterioration
 - **ADNT** [include]: Composite 0.48; interpretation: deterioration
+- **ADSK** [include]: Composite 0.87; interpretation: deterioration
 - **ADTN** [include]: Composite 0.65; interpretation: stable
 - **AERT** [exclude]: Hard veto: going-concern doubt cited (aert-10-q-2026-11-12-item7)
-- **AIT** [include]: Composite 0.90; interpretation: deterioration
-- **AMD** [include]: Composite 0.89; interpretation: deterioration
-- **AMKR** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
-- **AMTM** [include]: Composite 0.60; interpretation: deterioration
-- **APP** [include]: Composite 0.90; interpretation: deterioration
-- **AWX** [include]: Composite 0.44; interpretation: setback
-- **AZZ** [include]: Composite 0.99; interpretation: stable
+- **AMKR** [include]: Composite 0.86; interpretation: deterioration
+- **AMTM** [include]: Composite 0.70; interpretation: stable
+- **AWX** [include]: Composite 0.61; interpretation: stable
 - **BCC** [include]: Composite 0.88; interpretation: deterioration
 - **BE** [include]: Composite 0.71; interpretation: deterioration
 - **BHE** [include]: Composite 0.85; interpretation: deterioration
 - **BLLN** [include]: Composite 0.86; interpretation: deterioration
-- **BROS** [include]: Composite 0.90; interpretation: deterioration
 - **BSM** [include]: Composite 0.90; interpretation: deterioration
-- **BWMN** [include]: Composite 0.59; interpretation: deterioration
-- **CELH** [include]: Composite 0.87; interpretation: deterioration
-- **CLH** [include]: Composite 0.61; interpretation: stable
+- **BWMN** [include]: Composite 0.69; interpretation: setback
+- **CELH** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
+- **CHE** [include]: Composite 0.90; interpretation: deterioration
+- **CLH** [include]: Composite 0.51; interpretation: deterioration
 - **CNR** [include]: Composite 0.90; interpretation: deterioration
 - **COHR** [include]: Composite 0.73; interpretation: deterioration
+- **CRS** [include]: Composite 0.90; interpretation: deterioration
 - **CRWS** [include]: Composite 0.89; interpretation: deterioration
 - **CVGI** [include]: Composite 0.55; interpretation: deterioration
-- **CXDO** [include]: Composite 0.89; interpretation: deterioration
 - **DELL** [include]: Composite 0.86; interpretation: stable
 - **EE** [include]: Composite 0.84; interpretation: deterioration
-- **EOG** [include]: Composite 0.90; interpretation: deterioration
+- **ETON** [include]: Composite 0.87; interpretation: deterioration
 - **FLR** [include]: Composite 0.81; interpretation: stable
 - **FSS** [include]: Composite 0.90; interpretation: deterioration
 - **FSTR** [include]: Composite 0.90; interpretation: deterioration
 - **FTK** [include]: Composite 0.87; interpretation: deterioration
-- **FTLF** [include]: Composite 0.68; interpretation: deterioration
 - **GEF** [include]: Composite 0.87; interpretation: deterioration
 - **GPRE** [include]: Composite 0.85; interpretation: deterioration
 - **GWRE** [include]: Composite 0.73; interpretation: deterioration
-- **HALO** [include]: Composite 0.69; interpretation: deterioration
+- **HALO** [include]: Composite 0.79; interpretation: stable
 - **HAS** [include]: Composite 0.53; interpretation: deterioration
 - **HRMY** [exclude]: Hard veto: going-concern doubt cited (hrmy-10-q-2026-11-04-item7)
 - **IMKTA** [include]: Composite 0.85; interpretation: deterioration
+- **INFU** [include]: Composite 0.90; interpretation: deterioration
 - **INNV** [include]: Composite 0.88; interpretation: deterioration
 - **INTT** [include]: Composite 0.84; interpretation: deterioration
 - **INTU** [include]: Composite 0.90; interpretation: deterioration
-- **ITRI** [include]: Composite 0.72; interpretation: deterioration
+- **ITRI** [include]: Composite 0.82; interpretation: setback
+- **JCI** [include]: Composite 0.94; interpretation: setback
 - **KAI** [include]: Composite 0.85; interpretation: deterioration
 - **KFY** [include]: Composite 0.90; interpretation: deterioration
 - **KRMD** [include]: Composite 0.86; interpretation: deterioration
 - **KRT** [include]: Composite 0.87; interpretation: deterioration
 - **LFUS** [include]: Composite 0.66; interpretation: deterioration
 - **LPG** [include]: Composite 0.90; interpretation: deterioration
-- **M** [include]: Composite 0.89; interpretation: deterioration
 - **MAT** [include]: Composite 0.55; interpretation: deterioration
-- **MAX** [include]: Composite 0.91; interpretation: setback
+- **MAX** [include]: Composite 0.85; interpretation: deterioration
 - **META** [include]: Composite 0.90; interpretation: deterioration
-- **MGNI** [include]: Composite 0.96; interpretation: stable
 - **MPC** [include]: Composite 0.88; interpretation: deterioration
 - **MSM** [include]: Composite 0.89; interpretation: deterioration
 - **NKE** [include]: Composite 0.86; interpretation: deterioration
-- **NOV** [include]: Composite 0.84; interpretation: deterioration
-- **NPO** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
+- **NOV** [include]: Composite 0.94; interpretation: stable
+- **NPO** [include]: Composite 0.86; interpretation: deterioration
 - **NSYS** [include]: Composite 0.76; interpretation: deterioration
 - **NVT** [include]: Composite 0.85; interpretation: deterioration
 - **ODC** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
-- **OPRX** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
-- **OSW** [include]: Composite 0.94; interpretation: stable
+- **OPRX** [include]: Composite 0.90; interpretation: deterioration
+- **OSW** [include]: Composite 0.94; interpretation: setback
 - **PACS** [include]: Composite 0.90; interpretation: deterioration
 - **PATK** [exclude]: Hard veto: liquidity cover 0.94 < 1.00: cash, revolver and projected free cash flow do not cover maturities, leases, commitments, litigation and rate shock over 3 years
+- **PG** [include]: Composite 0.86; interpretation: deterioration
 - **PGEN** [exclude]: Hard veto: going-concern doubt cited (pgen-10-q-2026-11-04-item7)
 - **PLPC** [include]: Composite 0.90; interpretation: deterioration
 - **PNR** [include]: Composite 0.86; interpretation: deterioration
@@ -1957,24 +1939,27 @@ Score 0.94 | confidence medium | interpretation: setback | scope: unknown | matu
 - **SYY** [include]: Composite 0.53; interpretation: deterioration
 - **TGLS** [include]: Composite 0.87; interpretation: deterioration
 - **TGT** [include]: Composite 0.86; interpretation: deterioration
+- **THO** [include]: Composite 0.87; interpretation: deterioration
 - **TPC** [include]: Composite 0.90; interpretation: deterioration
 - **TSSI** [include]: Composite 0.67; interpretation: deterioration
 - **TWIN** [include]: Composite 0.89; interpretation: deterioration
+- **UBER** [include]: Composite 0.94; interpretation: setback
 - **UFPI** [include]: Composite 0.90; interpretation: deterioration
 - **ULS** [include]: Composite 0.90; interpretation: deterioration
 - **V** [include]: Composite 0.90; interpretation: deterioration
-- **VC** [include]: Composite 0.90; interpretation: deterioration
 - **VFC** [include]: Composite 0.58; interpretation: stable
 - **VFF** [include]: Composite 0.90; interpretation: deterioration
-- **VIRC** [include]: Composite 0.79; interpretation: deterioration
+- **VIRC** [include]: Composite 0.89; interpretation: stable
 - **VLTO** [include]: Composite 0.94; interpretation: stable
 - **VMC** [include]: Composite 0.94; interpretation: stable
 - **VPG** [include]: Composite 0.90; interpretation: deterioration
+- **VSXY** [include]: Composite 0.87; interpretation: deterioration
 - **WFRD** [include]: Composite 0.86; interpretation: deterioration
 - **WLDN** [include]: Composite 0.90; interpretation: deterioration
 - **XYL** [include]: Composite 0.94; interpretation: stable
-- **XYZ** [uncertain]: Evidence incomplete after retries: interpretation:unconfirmed_by_the_text
+- **XYZ** [include]: Composite 0.48; interpretation: deterioration
 - **YUM** [include]: Composite 0.54; interpretation: deterioration
+- **ZETA** [include]: Composite 0.86; interpretation: deterioration
 
 Removed before any filing text was read (counts):
 - 1,032 x prescreen_fail / prescreen
@@ -1988,21 +1973,20 @@ Removed before any filing text was read (counts):
 
 ## Human review queue
 
-- **ADSK** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **AMKR** (uncertain): weakness attributed to industry-wide conditions, not only this company; evidence incomplete
-- **CHE** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **AMD** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **AYI** (include): weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
+- **BROS** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **CELH** (uncertain): evidence incomplete
 - **CHWY** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **CRS** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **ETON** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **GOOGL** (include): weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan; industry Computer Software: Programming Data Processing flagged industry-wide weakness via META
-- **JCI** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **NPO** (uncertain): evidence incomplete
+- **DG** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **EOG** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **FTLF** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **LEVI** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **M** (include): branches disagreed on interpretation; the conservative one was chosen
+- **MZTI** (include): weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
 - **ODC** (uncertain): evidence incomplete
-- **OPRX** (uncertain): evidence incomplete
 - **PODD** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **THO** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **QCOM** (include): one-time setback accepted on cited evidence: confirm the recovery plan
 - **TPR** (include): weakness attributed to industry-wide conditions, not only this company; one-time setback accepted on cited evidence: confirm the recovery plan
-- **UBER** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **VLGEA** (include): one-time setback accepted on cited evidence: confirm the recovery plan
+- **VC** (include): one-time setback accepted on cited evidence: confirm the recovery plan
 - **VMI** (include): one-time setback accepted on cited evidence: confirm the recovery plan
-- **XPEL** (include): industry Industrial Specialties flagged industry-wide weakness via AIT

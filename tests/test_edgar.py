@@ -906,3 +906,49 @@ def test_regcap_size_and_debt_floor(tmp_path, monkeypatch, capsys):
     assert main(_screen_args(tmp_path, fz, sz, "regcap", "--min-ebitda", "1000000")) == 0   # opt-in floor, set above every fixture
     reg = json.loads((tmp_path / "regcap.json").read_text())
     assert reg["shortlist"] == [] and reg["scorecards"]["TSTA"]["skip_reason"] == "too_small"
+
+
+def test_download_data_uses_env_user_agent(tmp_path, monkeypatch, capsys):
+    """download-data sends SEC_USER_AGENT, writes both files, and skips files that already exist."""
+    import io
+    import forecaster.download as dl
+    seen = []
+
+    class Resp(io.BytesIO):
+        headers = {"Content-Length": "5"}
+        def __enter__(self): return self
+        def __exit__(self, *a): return False
+
+    def fake_open(req, timeout=0):
+        seen.append((req.full_url, req.get_header("User-agent")))
+        return Resp(b"12345")
+
+    monkeypatch.setattr(dl.urllib.request, "urlopen", fake_open)
+    monkeypatch.setenv("SEC_USER_AGENT", "Test User test@firm.com")
+    assert main(["download-data", "--dir", str(tmp_path)]) == 0
+    assert (tmp_path / "companyfacts.zip").read_bytes() == b"12345" and (tmp_path / "submissions.zip").exists()
+    assert not list(tmp_path.glob("*.part"))
+    assert {ua for _, ua in seen} == {"Test User test@firm.com"} and len(seen) == 2
+    assert main(["download-data", "--dir", str(tmp_path)]) == 0
+    assert len(seen) == 2                       # nothing downloaded again
+    monkeypatch.setenv("SEC_USER_AGENT", "Your Name your.email@example.com")
+    with pytest.raises(SystemExit):
+        main(["download-data", "--dir", str(tmp_path), "--force"])
+
+
+def test_screen_finds_bulk_files_in_data_dir(tmp_path, monkeypatch):
+    """Without --facts-zip / --submissions-zip the files saved by download-data in ./data are used."""
+    from types import SimpleNamespace
+    from forecaster.cli import _default_zips
+    monkeypatch.chdir(tmp_path)
+    a = SimpleNamespace(facts_zip=None, submissions_zip=None)
+    _default_zips(a)
+    assert a.facts_zip is None                  # nothing downloaded yet
+    (tmp_path / "data").mkdir()
+    (tmp_path / "data" / "companyfacts.zip").write_bytes(b"x")
+    (tmp_path / "data" / "submissions.zip").write_bytes(b"x")
+    _default_zips(a)
+    assert a.facts_zip.endswith("companyfacts.zip") and a.submissions_zip.endswith("submissions.zip")
+    b = SimpleNamespace(facts_zip="other.zip", submissions_zip=None)
+    _default_zips(b)
+    assert b.facts_zip == "other.zip"           # an explicit path wins
