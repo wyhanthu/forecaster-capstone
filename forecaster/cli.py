@@ -101,8 +101,9 @@ def _make_source(a, cfg):
 
 
 def _screen(a) -> int:
-    as_of = date.today().isoformat() if a.as_of == "today" else a.as_of
     live = a.source == "edgar" or bool(a.mode)
+    # live runs default to the system date; the offline sample keeps a fixed date so its output is reproducible
+    as_of = a.as_of if a.as_of != "today" else (date.today().isoformat() if live else "2026-11-01")
     cfg = ForecasterConfig(as_of=as_of, top_n=a.top_n or (100 if a.mode else 8), state_dir=a.state_dir, workers=a.workers)
     if a.mode:                                   # live runs: a CLO-style diversification limit per industry
         cfg.industry_cap_frac = a.industry_cap
@@ -420,7 +421,7 @@ def main(argv=None) -> int:
     ap.add_argument("--state-dir", default="forecaster_state")
     sub = ap.add_subparsers(dest="mode", required=True)
     s = sub.add_parser("screen")
-    s.add_argument("--as-of", default="2026-11-01")
+    s.add_argument("--as-of", default="today", help="analysis date (default: today; the offline sample uses 2026-11-01)")
     s.add_argument("--industry-cap", type=float, default=0.15,
                    help="live runs: max share of the list in one industry (Nasdaq.com taxonomy) (default 0.15; 0 = off)")
     s.add_argument("--industry-file", nargs="+",

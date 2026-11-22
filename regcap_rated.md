@@ -1,4 +1,4 @@
-# Forecaster screening report (2026-11-01)
+# Forecaster screening report (2026-11-21)
 
 Live SEC filings (EDGAR).
 Mode: RegCap (BBB+ or better) | maturity 2028-12-31 (2.2 years, horizon 3) | as of 2026-11-01

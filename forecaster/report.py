@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import math
 from collections import Counter
+from datetime import date
 from typing import Dict, List, Optional
 
 from .models import SECTION_LABELS, Scorecard, Status
@@ -77,7 +78,8 @@ def render(p: PortfolioResult, index: HybridIndex, as_of: str, note: Optional[st
     """`note` replaces the synthetic-data banner (live runs); `compact` summarizes the thousands of names that never got
     past the pre-screen or lacked data instead of listing each one."""
     counts = ", ".join(f"{k}: {v}" for k, v in sorted(p.counts.items()))
-    out = [f"# Forecaster screening report ({as_of})", "",
+    title_date = date.today().isoformat() if compact else as_of   # live reports carry the generation date
+    out = [f"# Forecaster screening report ({title_date})", "",
            note or "Synthetic demo universe: all companies and numbers are fictional.",
            f"Funnel outcome: {counts}", ""]
     if p.breaker:
