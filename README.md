@@ -295,6 +295,7 @@ Two live runs on filings as of 2026-11-21, maturity 2028-12-31, with Egan-Jones 
 - `regcap_rated.md`: RegCap, 35 names (most industry 9%, most sector 31%), about 760 LLM calls, 12 names to human review.
 - The two shortlists share 14 names. Re-running without `--ratings-file` changes 9 of the 50 CLO names and 8 of the 35 RegCap names: four CLO names (real ratings AA or AA-, above the A ceiling) and three RegCap names (real ratings BBB and BB, below BBB+) leave because of a real rating; the rest is replacement and model variation. Most names still rest on implied ratings, so the results show the pipeline and its caps
   work at scale, not that every name carries the targeted rating.
+- Rating calibration on 225 names with real Egan-Jones ratings: 32% exact, 61% within one category (`calibrate.py`).
 - `sample_report.md` is the offline demo on the synthetic universe.
 
 ## Design to code
@@ -326,6 +327,7 @@ Two live runs on filings as of 2026-11-21, maturity 2028-12-31, with Egan-Jones 
 `forecaster/` the package (code, `data/industry_map.csv`) | `tests/` 134 tests | `requirements.txt` | `.env.example` |
 `ratings.csv` real ratings for 301 companies |
 `clo_rated.md`, `regcap_rated.md`, `sample_report.md` example outputs.
+`SUMMARY.md` one-page summary of the design and results.
 
 ## Tests (optional, for developers)
 
