@@ -113,15 +113,22 @@ python -m forecaster.cli screen --mode regcap --maturity 2028-12-31 --top-n 35 \
    --ratings-file ratings.csv --output regcap_rated.md
 ```
 
+Main options:
+
 | Option | Meaning |
 |---|---|
 | `--mode clo` or `regcap` | which rating target and quotas to use (see "Modes and rating targets") |
 | `--maturity YYYY-MM-DD` | the date the collateral must last until |
 | `--top-n N` | how many names you want in the final list |
-| `--pool-factor 3` | the LLM reads 3 x N companies, then the final N are chosen under the caps |
-| `--ratings-file ratings.csv` | optional; real ratings override the implied ones |
-| `--facts-zip`, `--submissions-zip` | optional; default `data/companyfacts.zip` and `data/submissions.zip` from step 4 |
 | `--output file.md` | the report; a `.json` copy is written next to it |
+
+Optional (the defaults are usually what you want):
+
+| Option | Meaning |
+|---|---|
+| `--ratings-file ratings.csv` | real ratings override the implied ones |
+| `--pool-factor X` | the LLM reads X x N companies, then the final N are chosen under the caps (default 3) |
+| `--facts-zip`, `--submissions-zip` | default `data/companyfacts.zip` and `data/submissions.zip` from step 4 |
 | `--no-llm` | rules only, no key needed |
 
 What you will see: stage 1 screens all companies (about 2 minutes, no LLM), then stage 2 reads the filings of the pool (roughly
